@@ -12,7 +12,7 @@ export const IdentityLink: FC<UseIdentityUrlProps> = ({
 }) => {
   const url = useIdentityUrl({ type, returnTo, subdomain, substractHost })
 
-  if (!children) {
+  if (!children || !url) {
     return null
   }
 

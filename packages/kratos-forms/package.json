@@ -1,0 +1,30 @@
+{
+  "name": "@monstrs/react-kratos-forms",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -r -f dist",
+    "prepublishOnly": "yarn run build",
+    "build": "mctl library build"
+  },
+  "devDependencies": {
+    "@monstrs/mctl-cli": "0.2.90",
+    "@oryd/kratos-client": "0.5.4-alpha.1",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

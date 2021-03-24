@@ -22,11 +22,18 @@ export class FormStore {
     return new FormStore(fieldsMap, valuesMap)
   }
 
-  getField(name) {
-    return this.fields.get(name)
+  getField(name): KratosFormField | undefined {
+    const field = this.fields.get(name)
+
+    if (!field) {
+      // eslint-disable-next-line
+      console.log(`Field ${name} not found`)
+    }
+
+    return field
   }
 
-  getValue(name) {
+  getValue(name): string | any {
     return this.values.get(name)
   }
 }

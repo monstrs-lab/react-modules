@@ -1,13 +1,13 @@
-import { useMemo }           from 'react'
-import { useState }          from 'react'
-import { useCallback }       from 'react'
-import { FormEvent }         from 'react'
-import { FunctionComponent } from 'react'
+import { useMemo }        from 'react'
+import { useState }       from 'react'
+import { useCallback }    from 'react'
+import { FormEvent }      from 'react'
+import { FC }             from 'react'
 
-import { FormFieldProps }    from './form-field.interfaces'
-import { useForm }           from '../form'
+import { FormFieldProps } from './form-field.interfaces'
+import { useForm }        from '../form'
 
-export const FormField: FunctionComponent<FormFieldProps> = ({ name, children }) => {
+export const FormField: FC<FormFieldProps> = ({ name, children }) => {
   const form = useForm()
 
   if (!form) {
@@ -29,16 +29,9 @@ export const FormField: FunctionComponent<FormFieldProps> = ({ name, children })
 
   const field = useMemo(() => form.getField(name), [name, form])
 
-  if (!field) {
-    // eslint-disable-next-line
-    console.log(`Field ${name} not found`)
-
-    return null
-  }
-
-  if (typeof children === 'function') {
+  if (field && typeof children === 'function') {
     return children(field, value, onChange)
   }
 
-  return children
+  return null
 }

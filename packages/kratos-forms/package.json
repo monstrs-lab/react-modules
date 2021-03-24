@@ -12,12 +12,12 @@
     "build": "mctl library build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.90",
-    "@oryd/kratos-client": "0.5.4-alpha.1",
+    "@monstrs/mctl-cli": "0.2.92",
+    "@ory/kratos-client": "0.5.5-alpha.2",
     "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@types/react-dom": "^17.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "peerDependencies": {
     "react": "^17.0.1"

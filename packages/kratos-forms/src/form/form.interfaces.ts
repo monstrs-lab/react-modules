@@ -1,4 +1,4 @@
-import { FormField as BaseKratosFormField } from '@oryd/kratos-client'
+import { FormField as BaseKratosFormField } from '@ory/kratos-client'
 
 export interface KratosFormField extends Omit<BaseKratosFormField, 'value'> {
   value?: object | string

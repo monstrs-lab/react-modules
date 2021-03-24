@@ -1,12 +1,12 @@
-import React                 from 'react'
-import { useMemo }           from 'react'
-import { FunctionComponent } from 'react'
+import React         from 'react'
+import { useMemo }   from 'react'
+import { FC }        from 'react'
 
-import { FormStore }         from './form.store'
-import { Provider }          from './form.context'
-import { FormProps }         from './form.interfaces'
+import { FormStore } from './form.store'
+import { Provider }  from './form.context'
+import { FormProps } from './form.interfaces'
 
-export const Form: FunctionComponent<FormProps> = ({
+export const Form: FC<FormProps> = ({
   action,
   fields = [],
   method = 'POST',

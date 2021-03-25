@@ -7,8 +7,9 @@ export const IdentityUrlTypes = {
   login: '/auth/login',
   registration: '/auth/registration',
   verification: '/auth/verification',
+  recovery: '/auth/recovery',
   logout: '/auth/logout',
-  settings: '/settings',
+  settings: '/profile/settings',
 }
 
 export const useIdentityUrl = ({

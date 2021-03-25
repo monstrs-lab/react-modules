@@ -1,4 +1,10 @@
-export type IdentityUrlType = 'login' | 'registration' | 'settings' | 'verification' | 'logout'
+export type IdentityUrlType =
+  | 'login'
+  | 'registration'
+  | 'settings'
+  | 'verification'
+  | 'recovery'
+  | 'logout'
 
 export interface UseIdentityUrlProps {
   type?: IdentityUrlType

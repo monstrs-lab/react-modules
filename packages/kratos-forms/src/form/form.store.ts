@@ -1,29 +1,29 @@
 import { KratosFormField } from './form.interfaces'
 
 export class FormStore {
-  private fields: Map<string, KratosFormField>
+  private fields: KratosFormField[]
 
   private values: Map<string, string | any>
 
-  constructor(fields: Map<string, KratosFormField>, values: Map<string, string | any>) {
+  constructor(fields: KratosFormField[], values: Map<string, string | any>) {
     this.fields = fields
     this.values = values
   }
 
-  static create(fields: KratosFormField[] = []) {
-    const fieldsMap: Map<string, KratosFormField> = new Map()
-    const valuesMap: Map<string, string | any> = new Map()
+  static create(initialFields: KratosFormField[] = []) {
+    const values: Map<string, string | any> = new Map()
+    const fields: KratosFormField[] = []
 
-    fields.forEach(({ value = '', ...field }) => {
-      fieldsMap.set(field.name, field)
-      valuesMap.set(field.name, value)
+    initialFields.forEach(({ value = '', ...field }) => {
+      values.set(field.name, value)
+      fields.push(field)
     })
 
-    return new FormStore(fieldsMap, valuesMap)
+    return new FormStore(fields, values)
   }
 
   getField(name): KratosFormField | undefined {
-    const field = this.fields.get(name)
+    const field = this.fields.find((fld) => fld.name === name)
 
     if (!field) {
       // eslint-disable-next-line
@@ -31,6 +31,10 @@ export class FormStore {
     }
 
     return field
+  }
+
+  getFields(name): KratosFormField[] {
+    return this.fields.filter((field) => field.name === name)
   }
 
   getValue(name): string | any {

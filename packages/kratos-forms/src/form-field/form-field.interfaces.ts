@@ -15,3 +15,8 @@ export interface FormFieldProps {
     OnFormFieldChangeCallback
   ) => ReactElement<any>
 }
+
+export interface FormFieldsProps {
+  name: string
+  children: (fields: KratosFormField[]) => ReactElement<any>
+}

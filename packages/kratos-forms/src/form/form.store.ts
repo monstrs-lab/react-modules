@@ -10,13 +10,11 @@ export class FormStore {
     this.values = values
   }
 
-  static create(initialFields: KratosFormField[] = []) {
+  static create(fields: KratosFormField[] = []) {
     const values: Map<string, string | any> = new Map()
-    const fields: KratosFormField[] = []
 
-    initialFields.forEach(({ value = '', ...field }) => {
+    fields.forEach(({ value = '', ...field }) => {
       values.set(field.name, value)
-      fields.push(field)
     })
 
     return new FormStore(fields, values)

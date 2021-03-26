@@ -2,6 +2,7 @@
   "name": "react-modules",
   "private": true,
   "scripts": {
+    "postinstall": "husky install .config/husky",
     "lint": "mctl lint",
     "test:unit": "mctl test:unit",
     "test:integration": "mctl test:integration",

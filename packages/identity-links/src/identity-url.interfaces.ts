@@ -8,7 +8,7 @@ export type IdentityUrlType =
 
 export interface UseIdentityUrlProps {
   type?: IdentityUrlType
+  returnTo?: string | false
   subdomain?: string
-  returnTo?: string
   substractHost?: string
 }

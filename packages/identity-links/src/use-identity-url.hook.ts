@@ -25,16 +25,6 @@ export const useIdentityUrl = ({
       const { hostname, origin, href } = window.location
       const path = IdentityUrlTypes[type]
 
-      let returnToValue = href
-
-      if (returnTo) {
-        if (returnTo.startsWith('http')) {
-          returnToValue = returnTo
-        } else if (returnTo.startsWith('/')) {
-          returnToValue = `${origin}${returnTo}`
-        }
-      }
-
       let host = hostname
 
       if (substractHost && host.startsWith(substractHost)) {
@@ -45,7 +35,21 @@ export const useIdentityUrl = ({
         host = `${subdomain}.${host}`
       }
 
-      setUrl(`https://${host}${path}?return_to=${returnToValue}`)
+      if (returnTo === false) {
+        setUrl(`https://${host}${path}`)
+      } else {
+        let returnToValue = href
+
+        if (returnTo) {
+          if (returnTo.startsWith('http')) {
+            returnToValue = returnTo
+          } else if (returnTo.startsWith('/')) {
+            returnToValue = `${origin}${returnTo}`
+          }
+        }
+
+        setUrl(`https://${host}${path}?return_to=${returnToValue}`)
+      }
     }
   }, [type, subdomain, returnTo, substractHost])
 

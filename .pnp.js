@@ -51,6 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/mctl-cli", "virtual:9fa25fe3a80a6b545d626a996f57f4c711d2eb11235322654a56de57fa15a76bf879b2e84f9074adb177a797397b2e500783888ccc283ed707324ebb2ce7ac5b#npm:0.2.92"],
             ["@types/jest", "npm:26.0.21"],
             ["@types/node", "npm:14.14.35"],
+            ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["@yarnpkg/pnpify", "virtual:9fa25fe3a80a6b545d626a996f57f4c711d2eb11235322654a56de57fa15a76bf879b2e84f9074adb177a797397b2e500783888ccc283ed707324ebb2ce7ac5b#npm:2.4.0"],
             ["husky", "npm:5.2.0"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
@@ -1889,8 +1890,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/react-kratos-forms", "workspace:packages/kratos-forms"],
             ["@monstrs/mctl-cli", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:0.2.92"],
             ["@ory/kratos-client", "npm:0.5.5-alpha.2"],
+            ["@testing-library/jest-dom", "npm:5.11.9"],
+            ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:11.2.5"],
             ["@types/react", "npm:17.0.3"],
             ["@types/react-dom", "npm:17.0.3"],
+            ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"]
           ],
@@ -11532,6 +11536,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monstrs/mctl-cli", "virtual:9fa25fe3a80a6b545d626a996f57f4c711d2eb11235322654a56de57fa15a76bf879b2e84f9074adb177a797397b2e500783888ccc283ed707324ebb2ce7ac5b#npm:0.2.92"],
             ["@types/jest", "npm:26.0.21"],
             ["@types/node", "npm:14.14.35"],
+            ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["@yarnpkg/pnpify", "virtual:9fa25fe3a80a6b545d626a996f57f4c711d2eb11235322654a56de57fa15a76bf879b2e84f9074adb177a797397b2e500783888ccc283ed707324ebb2ce7ac5b#npm:2.4.0"],
             ["husky", "npm:5.2.0"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]

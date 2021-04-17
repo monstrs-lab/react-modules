@@ -7,12 +7,11 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rm -r -f dist",
-    "prepublishOnly": "yarn run build",
-    "build": "mctl library build"
+    "build": "yarn app library build",
+    "postpack": "rm -rf dist",
+    "prepack": "yarn run build"
   },
   "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.101",
     "@ory/kratos-client": "0.5.5-alpha.4",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",

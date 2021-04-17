@@ -1095,7 +1095,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/react-identity-links@workspace:packages/identity-links"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@testing-library/jest-dom": ^5.11.10
     "@testing-library/react": ^11.2.6
     "@testing-library/react-hooks": ^5.1.1
@@ -1113,7 +1112,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/react-kratos-forms@workspace:packages/kratos-forms"
   dependencies:
-    "@monstrs/mctl-cli": 0.2.101
     "@ory/kratos-client": 0.5.5-alpha.4
     "@testing-library/jest-dom": ^5.11.10
     "@testing-library/react": ^11.2.6

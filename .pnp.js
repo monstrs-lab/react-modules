@@ -29,6 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@monstrs/react-kratos-forms",
         "reference": "workspace:packages/kratos-forms"
+      },
+      {
+        "name": "@monstrs/react-user",
+        "reference": "workspace:packages/user"
       }
     ],
     "enableTopLevelFallback": true,
@@ -36,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["@monstrs/react-identity-links", ["workspace:packages/identity-links"]],
       ["@monstrs/react-kratos-forms", ["workspace:packages/kratos-forms"]],
+      ["@monstrs/react-user", ["workspace:packages/user"]],
       ["react-modules", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -1437,6 +1442,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__jest-dom", "npm:5.9.5"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@monstrs/react-user", [
+        ["workspace:packages/user", {
+          "packageLocation": "./packages/user/",
+          "packageDependencies": [
+            ["@monstrs/react-user", "workspace:packages/user"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.2"]
           ],
           "linkType": "SOFT",
         }]

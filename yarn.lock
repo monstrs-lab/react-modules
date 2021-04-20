@@ -1125,6 +1125,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/react-user@workspace:packages/user":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/react-user@workspace:packages/user"
+  dependencies:
+    "@types/react": ^17.0.3
+    react: ^17.0.2
+  peerDependencies:
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/stack-trace@npm:^0.0.4":
   version: 0.0.4
   resolution: "@monstrs/stack-trace@npm:0.0.4"

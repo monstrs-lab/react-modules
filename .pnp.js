@@ -23,6 +23,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       },
       {
+        "name": "@monstrs/react-api-auth-user",
+        "reference": "workspace:packages/api-auth-user"
+      },
+      {
         "name": "@monstrs/react-identity-links",
         "reference": "workspace:packages/identity-links"
       },
@@ -38,9 +42,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["@monstrs/react-api-auth-user", ["workspace:packages/api-auth-user"]],
       ["@monstrs/react-identity-links", ["workspace:packages/identity-links"]],
       ["@monstrs/react-kratos-forms", ["workspace:packages/kratos-forms"]],
-      ["@monstrs/react-user", ["workspace:packages/user"]],
+      ["@monstrs/react-user", ["virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user", "workspace:packages/user"]],
       ["react-modules", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -1412,6 +1417,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@monstrs/react-api-auth-user", [
+        ["workspace:packages/api-auth-user", {
+          "packageLocation": "./packages/api-auth-user/",
+          "packageDependencies": [
+            ["@monstrs/react-api-auth-user", "workspace:packages/api-auth-user"],
+            ["@monstrs/react-user", "virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.2"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@monstrs/react-identity-links", [
         ["workspace:packages/identity-links", {
           "packageLocation": "./packages/identity-links/",
@@ -1447,6 +1464,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@monstrs/react-user", [
+        ["virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user", {
+          "packageLocation": "./.yarn/$$virtual/@monstrs-react-user-virtual-dfdbe50b84/1/packages/user/",
+          "packageDependencies": [
+            ["@monstrs/react-user", "virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "SOFT",
+        }],
         ["workspace:packages/user", {
           "packageLocation": "./packages/user/",
           "packageDependencies": [

@@ -1091,6 +1091,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monstrs/react-api-auth-user@workspace:packages/api-auth-user":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/react-api-auth-user@workspace:packages/api-auth-user"
+  dependencies:
+    "@monstrs/react-user": "workspace:0.1.1"
+    "@types/react": ^17.0.3
+    react: ^17.0.2
+  peerDependencies:
+    "@monstrs/react-user": "*"
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/react-identity-links@workspace:packages/identity-links":
   version: 0.0.0-use.local
   resolution: "@monstrs/react-identity-links@workspace:packages/identity-links"
@@ -1125,7 +1138,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/react-user@workspace:packages/user":
+"@monstrs/react-user@workspace:0.1.1, @monstrs/react-user@workspace:packages/user":
   version: 0.0.0-use.local
   resolution: "@monstrs/react-user@workspace:packages/user"
   dependencies:

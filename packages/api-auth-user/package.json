@@ -1,0 +1,28 @@
+{
+  "name": "@monstrs/react-api-auth-user",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn app library build",
+    "postpack": "rm -rf dist",
+    "prepack": "yarn run build"
+  },
+  "devDependencies": {
+    "@monstrs/react-user": "workspace:0.1.1",
+    "@types/react": "^17.0.3",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "@monstrs/react-user": "*",
+    "react": "^17.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  }
+}

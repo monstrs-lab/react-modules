@@ -6,6 +6,7 @@ import { RegistrationFlow } from '../flows/registration.flow'
 import { VerificationFlow } from '../flows/verification.flow'
 import { RecoveryFlow }     from '../flows/recovery.flow'
 import { SettingsFlow }     from '../flows/settings.flow'
+import { ErrorsFlow }       from '../flows/errors.flow'
 import { LoginFlow }        from '../flows/login.flow'
 import { FlowName }         from '../flows/flow.interfaces'
 import { KratosClient }     from '../flows/kratos.client'
@@ -38,6 +39,10 @@ export const KratosFlowProvider: FC<KratosFlowProviderProps> = ({ name, basePath
 
     if (name === 'settings') {
       return new SettingsFlow(client)
+    }
+
+    if (name === 'errors') {
+      return new ErrorsFlow(client)
     }
 
     throw new Error(`Unkown flow: ${name}`)

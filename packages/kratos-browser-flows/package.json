@@ -1,6 +1,6 @@
 {
-  "name": "@monstrs/react-identity-links",
-  "version": "0.0.8",
+  "name": "@monstrs/react-kratos-browser-flows",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",
   "files": [
@@ -12,21 +12,27 @@
     "prepack": "yarn run build"
   },
   "devDependencies": {
+    "@ory/kratos-client": "^0.7.6-alpha.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
-    "@testing-library/react-hooks": "^7.0.2",
+    "@types/events": "^3.0.0",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "@types/testing-library__jest-dom": "^5.14.1",
+    "axios": "^0.21.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "peerDependencies": {
+    "@ory/kratos-client": "^0.7.6-alpha.1",
     "react": "^17.0.1"
   },
   "publishConfig": {
     "access": "public",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts"
+  },
+  "dependencies": {
+    "events": "^3.3.0"
   }
 }

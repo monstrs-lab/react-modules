@@ -7,10 +7,14 @@ export const FlowForm = ({ children, ...props }) => {
   const flow = useFlow()
 
   // eslint-disable-next-line
-  const { action, method } = useMemo(() => flow.getState()?.ui, [flow.getState()])
+  const ui = useMemo(() => flow.getState()?.ui, [flow.getState()])
+
+  if (!ui) {
+    return null
+  }
 
   return (
-    <form {...props} action={action} method={method}>
+    <form {...props} action={ui.action} method={ui.method}>
       {children}
     </form>
   )

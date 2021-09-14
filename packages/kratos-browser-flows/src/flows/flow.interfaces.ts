@@ -12,7 +12,13 @@ import type { UiText }                                from '@ory/kratos-client'
 import type { UiNode }                                from '@ory/kratos-client'
 import { EventEmitter }                               from 'events'
 
-export type FlowName = 'login' | 'registration' | 'recovery' | 'settings' | 'verification'
+export type FlowName =
+  | 'login'
+  | 'registration'
+  | 'recovery'
+  | 'settings'
+  | 'verification'
+  | 'errors'
 
 export type SelfServiceFlow =
   | SelfServiceRegistrationFlow

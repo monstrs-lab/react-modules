@@ -20,7 +20,7 @@ export const FlowError: FC<FlowErrorProps> = ({ children }) => {
 
   const state = flow.getState() as SelfServiceError
 
-  if (typeof children === 'function' && state.error) {
+  if (typeof children === 'function' && state?.error) {
     return children(state.error)
   }
 

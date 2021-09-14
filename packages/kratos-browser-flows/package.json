@@ -12,7 +12,6 @@
     "prepack": "yarn run build"
   },
   "devDependencies": {
-    "@ory/kratos-client": "^0.7.6-alpha.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
     "@types/events": "^3.0.0",
@@ -24,7 +23,6 @@
     "react-dom": "^17.0.2"
   },
   "peerDependencies": {
-    "@ory/kratos-client": "^0.7.6-alpha.1",
     "react": "^17.0.1"
   },
   "publishConfig": {
@@ -33,6 +31,7 @@
     "typings": "dist/index.d.ts"
   },
   "dependencies": {
+    "@ory/kratos-client": "^0.7.6-alpha.1",
     "events": "^3.3.0"
   }
 }

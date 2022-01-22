@@ -11,6 +11,9 @@
     "postpack": "rm -rf dist",
     "prepack": "yarn run build"
   },
+  "dependencies": {
+    "tldjs": "^2.3.1"
+  },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",

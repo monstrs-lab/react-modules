@@ -1,5 +1,5 @@
 {
-  "name": "@monstrs/react-kratos-user-provider",
+  "name": "@monstrs/react-identity-user-provider",
   "version": "0.0.1",
   "license": "MIT",
   "main": "src/index.ts",

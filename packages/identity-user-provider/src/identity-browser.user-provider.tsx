@@ -22,7 +22,7 @@ const locationExtractedBasePath: BasePathFn = () => {
   return `${protocol}//identity.${domain}`
 }
 
-export class KratosSessionsWhoamiUrl {
+export class IdentitySessionsWhoamiUrl {
   static fromBasePath(basePath: BasePath) {
     return new URL(
       '/sessions/whoami',
@@ -49,11 +49,11 @@ export const fetchSession = async (url) => {
   return data
 }
 
-export const KratosBrowserUserProvider = ({ basePath = locationExtractedBasePath, children }) => {
+export const IdentityBrowserUserProvider = ({ basePath = locationExtractedBasePath, children }) => {
   const [session, setSession] = useState(undefined)
 
   useBrowserEffect(() => {
-    fetchSession(KratosSessionsWhoamiUrl.fromBasePath(basePath)).then(setSession)
+    fetchSession(IdentitySessionsWhoamiUrl.fromBasePath(basePath)).then(setSession)
   }, [locationExtractedBasePath])
 
   return <UserProvider value={session}>{children}</UserProvider>

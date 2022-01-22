@@ -29,7 +29,7 @@ describe('identity-link.component', () => {
     // @ts-ignore
     expect(getByText('Login')).toHaveAttribute(
       'href',
-      'https://accounts.identity.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
+      'https://accounts.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
     )
   })
 })

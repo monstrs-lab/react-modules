@@ -25,7 +25,7 @@ describe('use-identity-url', () => {
     const { result } = renderHook(() => useIdentityUrl())
 
     expect(result.current).toBe(
-      'https://accounts.identity.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
+      'https://accounts.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
     )
   })
 
@@ -35,17 +35,7 @@ describe('use-identity-url', () => {
     const { result } = renderHook(() => useIdentityUrl({ type: 'registration' }))
 
     expect(result.current).toBe(
-      'https://accounts.identity.monstrs.dev/auth/registration?return_to=https://identity.monstrs.dev/'
-    )
-  })
-
-  it('custom subdomain', () => {
-    mockWindowLocation(new URL('https://identity.monstrs.dev'))
-
-    const { result } = renderHook(() => useIdentityUrl({ subdomain: 'custom' }))
-
-    expect(result.current).toBe(
-      'https://custom.identity.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
+      'https://accounts.monstrs.dev/auth/registration?return_to=https://identity.monstrs.dev/'
     )
   })
 
@@ -55,7 +45,7 @@ describe('use-identity-url', () => {
     const { result } = renderHook(() => useIdentityUrl({ returnTo: '/custom' }))
 
     expect(result.current).toBe(
-      'https://accounts.identity.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/custom'
+      'https://accounts.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/custom'
     )
   })
 
@@ -65,17 +55,7 @@ describe('use-identity-url', () => {
     const { result } = renderHook(() => useIdentityUrl({ returnTo: 'https://custom.monstrs.dev/' }))
 
     expect(result.current).toBe(
-      'https://accounts.identity.monstrs.dev/auth/login?return_to=https://custom.monstrs.dev/'
-    )
-  })
-
-  it('substract host', () => {
-    mockWindowLocation(new URL('https://identity.monstrs.dev'))
-
-    const { result } = renderHook(() => useIdentityUrl({ substractHost: 'identity' }))
-
-    expect(result.current).toBe(
-      'https://accounts.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
+      'https://accounts.monstrs.dev/auth/login?return_to=https://custom.monstrs.dev/'
     )
   })
 })

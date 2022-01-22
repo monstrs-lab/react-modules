@@ -31,12 +31,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/identity-links"
       },
       {
-        "name": "@monstrs/react-kratos-browser-flows",
-        "reference": "workspace:packages/kratos-browser-flows"
+        "name": "@monstrs/react-identity-user-provider",
+        "reference": "workspace:packages/identity-user-provider"
       },
       {
-        "name": "@monstrs/react-kratos-user-provider",
-        "reference": "workspace:packages/kratos-user-provider"
+        "name": "@monstrs/react-kratos-browser-flows",
+        "reference": "workspace:packages/kratos-browser-flows"
       },
       {
         "name": "@monstrs/react-user",
@@ -48,8 +48,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["@monstrs/react-api-auth-user", ["workspace:packages/api-auth-user"]],
       ["@monstrs/react-identity-links", ["workspace:packages/identity-links"]],
+      ["@monstrs/react-identity-user-provider", ["workspace:packages/identity-user-provider"]],
       ["@monstrs/react-kratos-browser-flows", ["workspace:packages/kratos-browser-flows"]],
-      ["@monstrs/react-kratos-user-provider", ["workspace:packages/kratos-user-provider"]],
       ["@monstrs/react-user", ["virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user", "workspace:packages/user"]],
       ["react-modules", ["workspace:."]]
     ],
@@ -1738,7 +1738,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.9"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"]
+            ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"],
+            ["tldjs", "npm:2.3.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@monstrs/react-identity-user-provider", [
+        ["workspace:packages/identity-user-provider", {
+          "packageLocation": "./packages/identity-user-provider/",
+          "packageDependencies": [
+            ["@monstrs/react-identity-user-provider", "workspace:packages/identity-user-provider"],
+            ["@monstrs/react-user", "virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user"],
+            ["@types/react", "npm:17.0.3"],
+            ["react", "npm:17.0.2"],
+            ["tldjs", "npm:2.3.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -1759,19 +1773,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["events", "npm:3.3.0"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["@monstrs/react-kratos-user-provider", [
-        ["workspace:packages/kratos-user-provider", {
-          "packageLocation": "./packages/kratos-user-provider/",
-          "packageDependencies": [
-            ["@monstrs/react-kratos-user-provider", "workspace:packages/kratos-user-provider"],
-            ["@monstrs/react-user", "virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user"],
-            ["@types/react", "npm:17.0.3"],
-            ["react", "npm:17.0.2"],
-            ["tldjs", "npm:2.3.1"]
           ],
           "linkType": "SOFT",
         }]

@@ -1156,6 +1156,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/react-kratos-user-provider@workspace:packages/kratos-user-provider":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/react-kratos-user-provider@workspace:packages/kratos-user-provider"
+  dependencies:
+    "@monstrs/react-user": "workspace:0.1.1"
+    "@types/react": ^17.0.20
+    react: ^17.0.2
+    tldjs: ^2.3.1
+  peerDependencies:
+    "@monstrs/react-user": "*"
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/react-user@workspace:0.1.1, @monstrs/react-user@workspace:packages/user":
   version: 0.0.0-use.local
   resolution: "@monstrs/react-user@workspace:packages/user"
@@ -7865,6 +7879,13 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
+"punycode@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "punycode@npm:1.4.1"
+  checksum: fa6e698cb53db45e4628559e557ddaf554103d2a96a1d62892c8f4032cd3bc8871796cae9eabc1bc700e2b6677611521ce5bb1d9a27700086039965d0cf34518
+  languageName: node
+  linkType: hard
+
 "punycode@npm:^2.1.0, punycode@npm:^2.1.1":
   version: 2.1.1
   resolution: "punycode@npm:2.1.1"
@@ -9124,6 +9145,15 @@ resolve@^2.0.0-next.3:
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: a38c3e059853c494af95d50c072b83f8b676a9ba2818dcc5b108ef252230735c54e0185437618596c790bbba8fcdaef5b290405981ffa09dce67b1f1bf190cbd
+  languageName: node
+  linkType: hard
+
+"tldjs@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "tldjs@npm:2.3.1"
+  dependencies:
+    punycode: ^1.4.1
+  checksum: f699c6a6aa29b0f0ed1297f3a8c692dd9403139d2e5c5381490c69e9e447e499dd8caaa2b228af30ecc8591b45af51344d2b39d99af2d29fcee964e8093428de
   languageName: node
   linkType: hard
 

@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/react-identity-links": patch
+  "@monstrs/react-identity-user-provider": patch

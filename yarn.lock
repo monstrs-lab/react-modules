@@ -1131,7 +1131,22 @@ __metadata:
     "@types/testing-library__jest-dom": ^5.14.1
     react: ^17.0.2
     react-dom: ^17.0.2
+    tldjs: ^2.3.1
   peerDependencies:
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
+"@monstrs/react-identity-user-provider@workspace:packages/identity-user-provider":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/react-identity-user-provider@workspace:packages/identity-user-provider"
+  dependencies:
+    "@monstrs/react-user": "workspace:0.1.1"
+    "@types/react": ^17.0.20
+    react: ^17.0.2
+    tldjs: ^2.3.1
+  peerDependencies:
+    "@monstrs/react-user": "*"
     react: ^17.0.1
   languageName: unknown
   linkType: soft
@@ -1152,20 +1167,6 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
   peerDependencies:
-    react: ^17.0.1
-  languageName: unknown
-  linkType: soft
-
-"@monstrs/react-kratos-user-provider@workspace:packages/kratos-user-provider":
-  version: 0.0.0-use.local
-  resolution: "@monstrs/react-kratos-user-provider@workspace:packages/kratos-user-provider"
-  dependencies:
-    "@monstrs/react-user": "workspace:0.1.1"
-    "@types/react": ^17.0.20
-    react: ^17.0.2
-    tldjs: ^2.3.1
-  peerDependencies:
-    "@monstrs/react-user": "*"
     react: ^17.0.1
   languageName: unknown
   linkType: soft

@@ -1,3 +1,4 @@
+export * from './with-user-loading.component'
 export * from './withouth-user.component'
 export * from './with-user.component'
 export * from './use-user.hook'

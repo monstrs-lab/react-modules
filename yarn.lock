@@ -1110,7 +1110,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/react-api-auth-user@workspace:packages/api-auth-user"
   dependencies:
-    "@monstrs/react-user": "workspace:0.1.1"
+    "@monstrs/react-user": "workspace:0.1.2"
     "@types/react": ^17.0.20
     react: ^17.0.2
   peerDependencies:
@@ -1141,7 +1141,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/react-identity-user-provider@workspace:packages/identity-user-provider"
   dependencies:
-    "@monstrs/react-user": "workspace:0.1.1"
+    "@monstrs/react-user": "workspace:0.1.2"
     "@types/react": ^17.0.20
     react: ^17.0.2
     tldjs: ^2.3.1
@@ -1171,7 +1171,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/react-user@workspace:0.1.1, @monstrs/react-user@workspace:packages/user":
+"@monstrs/react-user@workspace:0.1.2, @monstrs/react-user@workspace:packages/user":
   version: 0.0.0-use.local
   resolution: "@monstrs/react-user@workspace:packages/user"
   dependencies:

@@ -1,0 +1,4 @@
+releases:
+  "@monstrs/react-api-auth-user": patch
+  "@monstrs/react-kratos-user-provider": patch
+  "@monstrs/react-user": patch

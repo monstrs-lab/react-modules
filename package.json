@@ -1,18 +1,28 @@
 {
   "name": "react-modules",
   "private": true,
-  "devDependencies": {
-    "@monstrs/mctl-cli": "0.2.116",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.9.1",
-    "@types/testing-library__jest-dom": "^5.14.1",
-    "husky": "7.0.2",
-    "typescript": "4.4.3"
-  },
   "workspaces": [
     "packages/*"
   ],
-  "resolutions": {
-    "@types/react": "^17.0.3"
+  "devDependencies": {
+    "@jest/core": "^27.4.7",
+    "@monstrs/config-jest": "^0.0.10",
+    "@monstrs/schematics": "^0.0.15",
+    "@types/eslint": "^8",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.1",
+    "@types/testing-library__jest-dom": "^5.14.1",
+    "eslint": "^8.7.0",
+    "husky": "7.0.2",
+    "typescript": "4.4.3"
+  },
+  "packageManager": "yarn@3.1.1",
+  "tools": {
+    "schematic": {
+      "collection": "@monstrs/schematics",
+      "schematic": "project",
+      "type": "libraries",
+      "migration": 1642934344369
+    }
   }
 }

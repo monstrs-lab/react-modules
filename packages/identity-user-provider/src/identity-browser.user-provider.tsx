@@ -1,8 +1,8 @@
-import { UserProvider }     from '@monstrs/react-user'
-
-import { getDomain }        from 'tldjs'
 import React                from 'react'
 import { useState }         from 'react'
+import { getDomain }        from 'tldjs'
+
+import { UserProvider }     from '@monstrs/react-user'
 
 import { useBrowserEffect } from './use-browser-effect.hook'
 

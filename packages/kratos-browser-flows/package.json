@@ -7,9 +7,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn app library build",
-    "postpack": "rm -rf dist",
-    "prepack": "yarn run build"
+    "build": "yarn library build",
+    "prepack": "yarn run build",
+    "postpack": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ory/kratos-client": "^0.7.6-alpha.1",
+    "events": "^3.3.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -29,9 +33,5 @@
     "access": "public",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts"
-  },
-  "dependencies": {
-    "@ory/kratos-client": "^0.7.6-alpha.1",
-    "events": "^3.3.0"
   }
 }

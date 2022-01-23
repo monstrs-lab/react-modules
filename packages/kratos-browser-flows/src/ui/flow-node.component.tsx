@@ -1,10 +1,11 @@
 import { UiNode }       from '@ory/kratos-client'
+
 import { ReactElement } from 'react'
 import { FC }           from 'react'
+import { FormEvent }    from 'react'
 import { useMemo }      from 'react'
 import { useState }     from 'react'
 import { useCallback }  from 'react'
-import { FormEvent }    from 'react'
 
 import { useFlow }      from '../providers'
 

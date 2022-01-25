@@ -12,12 +12,12 @@
     "postpack": "rm -rf dist"
   },
   "dependencies": {
-    "@ory/kratos-client": "^0.7.6-alpha.1",
+    "@ory/kratos-client": "^0.8.2-alpha.1",
     "events": "^3.3.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
     "@types/events": "^3.0.0",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",

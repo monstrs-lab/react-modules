@@ -9,25 +9,11 @@ import { useCallback }  from 'react'
 
 import { useFlow }      from '../providers'
 
-interface FlowUiNodeAttributes {
-  disabled: boolean
-  name: string
-  pattern?: string
-  required?: boolean
-  type: string
-  value?: any | null
-  src: string
-}
-
-interface FlowUiNode extends Omit<UiNode, 'attributes'> {
-  attributes: FlowUiNodeAttributes
-}
-
 type OnChangeCallback = (event: FormEvent<HTMLInputElement> | string | any) => void
 
 export interface FlowNodeProps {
   name: string
-  children: (node: FlowUiNode, value: string | any, callback: OnChangeCallback) => ReactElement<any>
+  children: (node: UiNode, value: string | any, callback: OnChangeCallback) => ReactElement<any>
 }
 
 export const FlowNode: FC<FlowNodeProps> = ({ name, children }) => {
@@ -52,7 +38,7 @@ export const FlowNode: FC<FlowNodeProps> = ({ name, children }) => {
   )
 
   if (node && typeof children === 'function') {
-    return children(node as FlowUiNode, value, onChange)
+    return children(node, value, onChange)
   }
 
   return null

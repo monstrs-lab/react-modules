@@ -1532,8 +1532,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/identity-links/",
           "packageDependencies": [
             ["@monstrs/react-identity-links", "workspace:packages/identity-links"],
-            ["@testing-library/jest-dom", "npm:5.14.1"],
-            ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.0"],
+            ["@testing-library/jest-dom", "npm:5.16.1"],
+            ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.2"],
             ["@testing-library/react-hooks", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:7.0.2"],
             ["@types/react", "npm:17.0.38"],
             ["@types/react-dom", "npm:17.0.11"],
@@ -1563,9 +1563,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/kratos-browser-flows/",
           "packageDependencies": [
             ["@monstrs/react-kratos-browser-flows", "workspace:packages/kratos-browser-flows"],
-            ["@ory/kratos-client", "npm:0.7.6-alpha.1"],
-            ["@testing-library/jest-dom", "npm:5.14.1"],
-            ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.0"],
+            ["@ory/kratos-client", "npm:0.8.2-alpha.1"],
+            ["@testing-library/jest-dom", "npm:5.16.1"],
+            ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.2"],
             ["@types/events", "npm:3.0.0"],
             ["@types/react", "npm:17.0.38"],
             ["@types/react-dom", "npm:17.0.11"],
@@ -1630,10 +1630,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@ory/kratos-client", [
-        ["npm:0.7.6-alpha.1", {
-          "packageLocation": "./.yarn/cache/@ory-kratos-client-npm-0.7.6-alpha.1-5e3003ddc6-5ea6c8604a.zip/node_modules/@ory/kratos-client/",
+        ["npm:0.8.2-alpha.1", {
+          "packageLocation": "./.yarn/cache/@ory-kratos-client-npm-0.8.2-alpha.1-8d2a5db47c-d103ffdf08.zip/node_modules/@ory/kratos-client/",
           "packageDependencies": [
-            ["@ory/kratos-client", "npm:0.7.6-alpha.1"],
+            ["@ory/kratos-client", "npm:0.8.2-alpha.1"],
             ["axios", "npm:0.21.4"]
           ],
           "linkType": "HARD",
@@ -1677,13 +1677,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@testing-library/jest-dom", [
-        ["npm:5.14.1", {
-          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.14.1-1ece992419-eeba37ba10.zip/node_modules/@testing-library/jest-dom/",
+        ["npm:5.16.1", {
+          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.16.1-c862a31148-c5e3b5b021.zip/node_modules/@testing-library/jest-dom/",
           "packageDependencies": [
-            ["@testing-library/jest-dom", "npm:5.14.1"],
+            ["@testing-library/jest-dom", "npm:5.16.1"],
             ["@babel/runtime", "npm:7.15.4"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
-            ["aria-query", "npm:4.2.2"],
+            ["aria-query", "npm:5.0.0"],
             ["chalk", "npm:3.0.0"],
             ["css", "npm:3.0.0"],
             ["css.escape", "npm:1.5.1"],
@@ -1695,17 +1695,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@testing-library/react", [
-        ["npm:12.1.0", {
-          "packageLocation": "./.yarn/cache/@testing-library-react-npm-12.1.0-0552057b66-84ab074f12.zip/node_modules/@testing-library/react/",
+        ["npm:12.1.2", {
+          "packageLocation": "./.yarn/cache/@testing-library-react-npm-12.1.2-ccdefbca45-70b0f7f27c.zip/node_modules/@testing-library/react/",
           "packageDependencies": [
-            ["@testing-library/react", "npm:12.1.0"]
+            ["@testing-library/react", "npm:12.1.2"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.0", {
-          "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-4e628c627e/0/cache/@testing-library-react-npm-12.1.0-0552057b66-84ab074f12.zip/node_modules/@testing-library/react/",
+        ["virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.2", {
+          "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-38e223915c/0/cache/@testing-library-react-npm-12.1.2-ccdefbca45-70b0f7f27c.zip/node_modules/@testing-library/react/",
           "packageDependencies": [
-            ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.0"],
+            ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.2"],
             ["@babel/runtime", "npm:7.15.4"],
             ["@testing-library/dom", "npm:8.5.0"],
             ["@types/react", "npm:17.0.38"],
@@ -2293,6 +2293,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aria-query", "npm:4.2.2"],
             ["@babel/runtime", "npm:7.15.4"],
             ["@babel/runtime-corejs3", "npm:7.12.5"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/aria-query-npm-5.0.0-986fb11e0e-c41f98866c.zip/node_modules/aria-query/",
+          "packageDependencies": [
+            ["aria-query", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]

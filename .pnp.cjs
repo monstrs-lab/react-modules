@@ -62,14 +62,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@jest/core", "virtual:9fa25fe3a80a6b545d626a996f57f4c711d2eb11235322654a56de57fa15a76bf879b2e84f9074adb177a797397b2e500783888ccc283ed707324ebb2ce7ac5b#npm:27.4.7"],
             ["@monstrs/config-jest", "npm:0.0.10"],
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@types/eslint", "npm:8.4.1"],
-            ["@types/jest", "npm:27.0.1"],
-            ["@types/node", "npm:16.9.1"],
-            ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/jest", "npm:27.4.0"],
+            ["@types/node", "npm:17.0.12"],
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["eslint", "npm:8.7.0"],
-            ["husky", "npm:7.0.2"],
-            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=de8f8a"]
+            ["husky", "npm:7.0.4"],
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=de8f8a"]
           ],
           "linkType": "SOFT",
         }]
@@ -1536,8 +1536,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.0"],
             ["@testing-library/react-hooks", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:7.0.2"],
             ["@types/react", "npm:17.0.38"],
-            ["@types/react-dom", "npm:17.0.9"],
-            ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/react-dom", "npm:17.0.11"],
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"],
             ["tldjs", "npm:2.3.1"]
@@ -1568,8 +1568,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:12.1.0"],
             ["@types/events", "npm:3.0.0"],
             ["@types/react", "npm:17.0.38"],
-            ["@types/react-dom", "npm:17.0.9"],
-            ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/react-dom", "npm:17.0.11"],
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["axios", "npm:0.21.4"],
             ["events", "npm:3.3.0"],
             ["react", "npm:17.0.2"],
@@ -1603,28 +1603,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@monstrs/schematics", [
-        ["npm:0.0.15", {
-          "packageLocation": "./.yarn/cache/@monstrs-schematics-npm-0.0.15-6df713e677-7aed01309f.zip/node_modules/@monstrs/schematics/",
+        ["npm:0.0.19", {
+          "packageLocation": "./.yarn/cache/@monstrs-schematics-npm-0.0.19-69e5247643-3801570a64.zip/node_modules/@monstrs/schematics/",
           "packageDependencies": [
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@angular-devkit/core", "virtual:184b2c54223bca244453cb3eea82279816b2a72ab1a2ab42893a757dd2a9477490b57fcaca5371628f0b2b2e32642bd79567a0f75348c4909f699c7dd696968b#npm:13.1.4"],
             ["@angular-devkit/schematics", "npm:13.1.4"],
             ["@monstrs/config-typescript", "npm:0.0.10"],
-            ["@monstrs/schematics-utils", "npm:0.1.9"]
+            ["@monstrs/schematics-utils", "npm:0.1.11"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@monstrs/schematics-utils", [
-        ["npm:0.1.9", {
-          "packageLocation": "./.yarn/cache/@monstrs-schematics-utils-npm-0.1.9-d1e5b13068-f811984e30.zip/node_modules/@monstrs/schematics-utils/",
+        ["npm:0.1.11", {
+          "packageLocation": "./.yarn/cache/@monstrs-schematics-utils-npm-0.1.11-3e36c80c95-6d4fc709b0.zip/node_modules/@monstrs/schematics-utils/",
           "packageDependencies": [
-            ["@monstrs/schematics-utils", "npm:0.1.9"],
+            ["@monstrs/schematics-utils", "npm:0.1.11"],
             ["@angular-devkit/core", "virtual:184b2c54223bca244453cb3eea82279816b2a72ab1a2ab42893a757dd2a9477490b57fcaca5371628f0b2b2e32642bd79567a0f75348c4909f699c7dd696968b#npm:13.1.4"],
             ["@angular-devkit/schematics", "npm:13.1.4"],
+            ["js-yaml", "npm:4.1.0"],
             ["semver", "npm:6.3.0"],
-            ["strip-json-comments", "npm:3.0.1"],
-            ["yaml", "npm:1.10.2"]
+            ["strip-json-comments", "npm:3.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -1709,7 +1709,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/runtime", "npm:7.15.4"],
             ["@testing-library/dom", "npm:8.5.0"],
             ["@types/react", "npm:17.0.38"],
-            ["@types/react-dom", "npm:17.0.9"],
+            ["@types/react-dom", "npm:17.0.11"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"]
           ],
@@ -1736,7 +1736,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react-hooks", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:7.0.2"],
             ["@babel/runtime", "npm:7.15.4"],
             ["@types/react", "npm:17.0.38"],
-            ["@types/react-dom", "npm:17.0.9"],
+            ["@types/react-dom", "npm:17.0.11"],
             ["@types/react-test-renderer", "npm:17.0.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:a516437a86adb050c8a2901db1fb4a197abc49dbcf595313978b64a769bff3a7ce78e0ec9728c3ac0103c891db186bd7ebabc76662f42810d3dc537c9751a995#npm:17.0.2"],
@@ -1893,6 +1893,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-format", "npm:27.2.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:27.4.0", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-27.4.0-33755263ec-d2350267f9.zip/node_modules/@types/jest/",
+          "packageDependencies": [
+            ["@types/jest", "npm:27.4.0"],
+            ["jest-diff", "npm:27.2.0"],
+            ["pretty-format", "npm:27.2.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@types/json-schema", [
@@ -1909,6 +1918,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-16.9.1-bde6d3b0c9-41afcf183a.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:16.9.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:17.0.12", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.12-719f3bab17-f7e4c384b7.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:17.0.12"]
           ],
           "linkType": "HARD",
         }]
@@ -1944,10 +1960,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/react-dom", [
-        ["npm:17.0.9", {
-          "packageLocation": "./.yarn/cache/@types-react-dom-npm-17.0.9-046b4282f3-b7e898e1a2.zip/node_modules/@types/react-dom/",
+        ["npm:17.0.11", {
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-17.0.11-fc2e584a96-4d5730dffb.zip/node_modules/@types/react-dom/",
           "packageDependencies": [
-            ["@types/react-dom", "npm:17.0.9"],
+            ["@types/react-dom", "npm:17.0.11"],
             ["@types/react", "npm:17.0.38"]
           ],
           "linkType": "HARD",
@@ -1986,6 +2002,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.1-f3ff511550-77fe7ad3a9.zip/node_modules/@types/testing-library__jest-dom/",
           "packageDependencies": [
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/jest", "npm:27.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.14.2", {
+          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.2-639cce59b8-e08715a565.zip/node_modules/@types/testing-library__jest-dom/",
+          "packageDependencies": [
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["@types/jest", "npm:27.0.1"]
           ],
           "linkType": "HARD",
@@ -3880,10 +3904,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:7.0.2", {
-          "packageLocation": "./.yarn/cache/husky-npm-7.0.2-f2a671a0c6-2ccfe6ddc5.zip/node_modules/husky/",
+        ["npm:7.0.4", {
+          "packageLocation": "./.yarn/cache/husky-npm-7.0.4-917ba035c6-c6ec4af63d.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:7.0.2"]
+            ["husky", "npm:7.0.4"]
           ],
           "linkType": "HARD",
         }]
@@ -5621,14 +5645,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-modules", "workspace:."],
             ["@jest/core", "virtual:9fa25fe3a80a6b545d626a996f57f4c711d2eb11235322654a56de57fa15a76bf879b2e84f9074adb177a797397b2e500783888ccc283ed707324ebb2ce7ac5b#npm:27.4.7"],
             ["@monstrs/config-jest", "npm:0.0.10"],
-            ["@monstrs/schematics", "npm:0.0.15"],
+            ["@monstrs/schematics", "npm:0.0.19"],
             ["@types/eslint", "npm:8.4.1"],
-            ["@types/jest", "npm:27.0.1"],
-            ["@types/node", "npm:16.9.1"],
-            ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/jest", "npm:27.4.0"],
+            ["@types/node", "npm:17.0.12"],
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["eslint", "npm:8.7.0"],
-            ["husky", "npm:7.0.2"],
-            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=de8f8a"]
+            ["husky", "npm:7.0.4"],
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=de8f8a"]
           ],
           "linkType": "SOFT",
         }]
@@ -6438,10 +6462,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typescript", [
-        ["patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=de8f8a", {
-          "packageLocation": "./.yarn/cache/typescript-patch-ba01cfb96a-33a9168199.zip/node_modules/typescript/",
+        ["patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=de8f8a", {
+          "packageLocation": "./.yarn/cache/typescript-patch-9606f35981-858c61fa63.zip/node_modules/typescript/",
           "packageDependencies": [
-            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=de8f8a"]
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=de8f8a"]
           ],
           "linkType": "HARD",
         }]
@@ -6703,15 +6727,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yallist-npm-4.0.0-b493d9e907-343617202a.zip/node_modules/yallist/",
           "packageDependencies": [
             ["yallist", "npm:4.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["yaml", [
-        ["npm:1.10.2", {
-          "packageLocation": "./.yarn/cache/yaml-npm-1.10.2-0e780aebdf-ce4ada136e.zip/node_modules/yaml/",
-          "packageDependencies": [
-            ["yaml", "npm:1.10.2"]
           ],
           "linkType": "HARD",
         }]

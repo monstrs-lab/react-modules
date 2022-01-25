@@ -5,7 +5,7 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@angular-devkit/core@npm:13.1.4, @angular-devkit/core@npm:^13.1.1, @angular-devkit/core@npm:^13.1.4":
+"@angular-devkit/core@npm:13.1.4, @angular-devkit/core@npm:^13.1.4":
   version: 13.1.4
   resolution: "@angular-devkit/core@npm:13.1.4"
   dependencies:
@@ -24,7 +24,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/schematics@npm:^13.1.1, @angular-devkit/schematics@npm:^13.1.4":
+"@angular-devkit/schematics@npm:^13.1.4":
   version: 13.1.4
   resolution: "@angular-devkit/schematics@npm:13.1.4"
   dependencies:
@@ -1030,7 +1030,7 @@ __metadata:
   resolution: "@monstrs/react-api-auth-user@workspace:packages/api-auth-user"
   dependencies:
     "@monstrs/react-user": "workspace:0.1.2"
-    "@types/react": ^17.0.20
+    "@types/react": ^17.0.38
     react: ^17.0.2
   peerDependencies:
     "@monstrs/react-user": "*"
@@ -1045,9 +1045,9 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.1.0
     "@testing-library/react-hooks": ^7.0.2
-    "@types/react": ^17.0.20
-    "@types/react-dom": ^17.0.9
-    "@types/testing-library__jest-dom": ^5.14.1
+    "@types/react": ^17.0.38
+    "@types/react-dom": ^17.0.11
+    "@types/testing-library__jest-dom": ^5.14.2
     react: ^17.0.2
     react-dom: ^17.0.2
     tldjs: ^2.3.1
@@ -1061,7 +1061,7 @@ __metadata:
   resolution: "@monstrs/react-identity-user-provider@workspace:packages/identity-user-provider"
   dependencies:
     "@monstrs/react-user": "workspace:0.1.2"
-    "@types/react": ^17.0.20
+    "@types/react": ^17.0.38
     react: ^17.0.2
     tldjs: ^2.3.1
   peerDependencies:
@@ -1078,9 +1078,9 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.1.0
     "@types/events": ^3.0.0
-    "@types/react": ^17.0.20
-    "@types/react-dom": ^17.0.9
-    "@types/testing-library__jest-dom": ^5.14.1
+    "@types/react": ^17.0.38
+    "@types/react-dom": ^17.0.11
+    "@types/testing-library__jest-dom": ^5.14.2
     axios: ^0.21.4
     events: ^3.3.0
     react: ^17.0.2
@@ -1094,35 +1094,35 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monstrs/react-user@workspace:packages/user"
   dependencies:
-    "@types/react": ^17.0.20
+    "@types/react": ^17.0.38
     react: ^17.0.2
   peerDependencies:
     react: ^17.0.1
   languageName: unknown
   linkType: soft
 
-"@monstrs/schematics-utils@npm:0.1.9":
-  version: 0.1.9
-  resolution: "@monstrs/schematics-utils@npm:0.1.9"
+"@monstrs/schematics-utils@npm:0.1.11":
+  version: 0.1.11
+  resolution: "@monstrs/schematics-utils@npm:0.1.11"
   dependencies:
-    "@angular-devkit/core": ^13.1.1
-    "@angular-devkit/schematics": ^13.1.1
+    "@angular-devkit/core": ^13.1.4
+    "@angular-devkit/schematics": ^13.1.4
+    js-yaml: ^4.1.0
     semver: 6.3.0
     strip-json-comments: 3.0.1
-    yaml: 1.10.2
-  checksum: f811984e30525a06604bd073889fbc9cfe58ac75a092a405fc216c017ddecbe081cb5dd98cdbabf346ab4fc969b3cd044fecbdf8f0c731701278158319672da8
+  checksum: 6d4fc709b0391ff5710e1be3109ed3ad97847f4afdec8b7917543600bb69c700b123b7fc7524d1cdd0bc61f10d783ff6fe7ddc65c5f44298fac40611fb0fae79
   languageName: node
   linkType: hard
 
-"@monstrs/schematics@npm:^0.0.15":
-  version: 0.0.15
-  resolution: "@monstrs/schematics@npm:0.0.15"
+"@monstrs/schematics@npm:^0.0.19":
+  version: 0.0.19
+  resolution: "@monstrs/schematics@npm:0.0.19"
   dependencies:
     "@angular-devkit/core": ^13.1.4
     "@angular-devkit/schematics": ^13.1.4
     "@monstrs/config-typescript": 0.0.10
-    "@monstrs/schematics-utils": 0.1.9
-  checksum: 7aed01309fecd314a4d53642874a30e6f6420bf76ceadc5100ec0efb2869be6e5abdce2669d8341260b1d62171eebb2370145de447a0827bad7bb8c4a43e8bc2
+    "@monstrs/schematics-utils": 0.1.11
+  checksum: 3801570a64bd1b0e71fcedf5e6b045e3c7cae2f14ab83052f1af6a5fe4a33bb26b84e87732647cc25d19de6b6424e07d791bf305c299aadc019f47984e96682f
   languageName: node
   linkType: hard
 
@@ -1276,7 +1276,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^8":
+"@types/eslint@npm:^8.4.1":
   version: 8.4.1
   resolution: "@types/eslint@npm:8.4.1"
   dependencies:
@@ -1334,13 +1334,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:^27.0.1":
+"@types/jest@npm:*":
   version: 27.0.1
   resolution: "@types/jest@npm:27.0.1"
   dependencies:
     jest-diff: ^27.0.0
     pretty-format: ^27.0.0
   checksum: 972aaae341b83eb608970c93295282f1f9edc056dc8123635456cbaced822702673118d60279c7b889300e7c9a0726c3674d701115915e2e1967db09542389c2
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:^27.4.0":
+  version: 27.4.0
+  resolution: "@types/jest@npm:27.4.0"
+  dependencies:
+    jest-diff: ^27.0.0
+    pretty-format: ^27.0.0
+  checksum: d2350267f954f9a2e4a15e5f02fbf19a77abfb9fd9e57a954de1fb0e9a0d3d5f8d3646ac7d9c42aeb4b4d828d2e70624ec149c85bb50a48634a54eed8429e1f8
   languageName: node
   linkType: hard
 
@@ -1351,10 +1361,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.9.1":
+"@types/node@npm:*":
   version: 16.9.1
   resolution: "@types/node@npm:16.9.1"
   checksum: 41afcf183a22d59323a0199dd7e0f46591247f45fc08a4434edb26d56dc279ae4fdb80f37989ddd7a0f45e3857c4933e6e82057ede09c5a829f77e373e680375
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.12":
+  version: 17.0.12
+  resolution: "@types/node@npm:17.0.12"
+  checksum: f7e4c384b72648550391c2c8bd42560dfccf5b7a0506fb5842f326f8b176286be279dd63f62af621fe6d409d474ea5d312855061f512132e999f4e902a22e4db
   languageName: node
   linkType: hard
 
@@ -1372,12 +1389,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:>=16.9.0, @types/react-dom@npm:^17.0.9":
+"@types/react-dom@npm:>=16.9.0":
   version: 17.0.9
   resolution: "@types/react-dom@npm:17.0.9"
   dependencies:
     "@types/react": "*"
   checksum: b7e898e1a22643a371f58e801a3d1d8cf13a82d77063c24be73e840ef8d877ca1d04adc5db168d0dac3167dc050a26b1d70efc5fe8566a7f46a3c488a8322989
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^17.0.11":
+  version: 17.0.11
+  resolution: "@types/react-dom@npm:17.0.11"
+  dependencies:
+    "@types/react": "*"
+  checksum: 4d5730dffbef86c887cecad7e3cecda424ce6a64d0b5441c63b5b015d48219868660a2bb1aa15e897e565ad8867fa6b885d4358b04e1c4e589ba4c07c3fda55c
   languageName: node
   linkType: hard
 
@@ -1390,7 +1416,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:>=16.9.0, @types/react@npm:^17.0.20":
+"@types/react@npm:*, @types/react@npm:>=16.9.0, @types/react@npm:^17.0.38":
   version: 17.0.38
   resolution: "@types/react@npm:17.0.38"
   dependencies:
@@ -1415,7 +1441,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/testing-library__jest-dom@npm:^5.14.1, @types/testing-library__jest-dom@npm:^5.9.1":
+"@types/testing-library__jest-dom@npm:^5.14.2":
+  version: 5.14.2
+  resolution: "@types/testing-library__jest-dom@npm:5.14.2"
+  dependencies:
+    "@types/jest": "*"
+  checksum: e08715a565cc189112a6611485d779a0f1ceb546a9d4601b21aacff7596d7acf8b7c702e4c5f825677431ff601df3e635887dc8a5735da1a263cc857eb7c3833
+  languageName: node
+  linkType: hard
+
+"@types/testing-library__jest-dom@npm:^5.9.1":
   version: 5.14.1
   resolution: "@types/testing-library__jest-dom@npm:5.14.1"
   dependencies:
@@ -3021,12 +3056,12 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"husky@npm:7.0.2":
-  version: 7.0.2
-  resolution: "husky@npm:7.0.2"
+"husky@npm:7.0.4":
+  version: 7.0.4
+  resolution: "husky@npm:7.0.4"
   bin:
     husky: lib/bin.js
-  checksum: 2ccfe6ddc51dc05ae8ea1e2fbb893344e93a813e00c595d6b5f5e704b7b998d6b0e2adda7c57f99b5e46a60dc07c7d860269a2ea91661c6bacef0eca8e0b8e96
+  checksum: c6ec4af63da2c9522da8674a20ad9b48362cc92704896cc8a58c6a2a39d797feb2b806f93fbd83a6d653fbdceb2c3b6e0b602c6b2e8565206ffc2882ef7db9e9
   languageName: node
   linkType: hard
 
@@ -4537,14 +4572,14 @@ fsevents@^2.3.2:
   dependencies:
     "@jest/core": ^27.4.7
     "@monstrs/config-jest": ^0.0.10
-    "@monstrs/schematics": ^0.0.15
-    "@types/eslint": ^8
-    "@types/jest": ^27.0.1
-    "@types/node": ^16.9.1
-    "@types/testing-library__jest-dom": ^5.14.1
+    "@monstrs/schematics": ^0.0.19
+    "@types/eslint": ^8.4.1
+    "@types/jest": ^27.4.0
+    "@types/node": ^17.0.12
+    "@types/testing-library__jest-dom": ^5.14.2
     eslint: ^8.7.0
-    husky: 7.0.2
-    typescript: 4.4.3
+    husky: 7.0.4
+    typescript: 4.5.5
   languageName: unknown
   linkType: soft
 
@@ -5294,23 +5329,23 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-typescript@4.4.3:
-  version: 4.4.3
-  resolution: "typescript@npm:4.4.3"
+"typescript@npm:4.5.5":
+  version: 4.5.5
+  resolution: "typescript@npm:4.5.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 05823f21796d450531a7e4ab299715d38fd9ded0e4ce7400876053f4b5166ca3dde7a68cecfe72d9086039f03c0b6edba36516fb10ed83c5837d9600532ea4c2
+  checksum: 506f4c919dc8aeaafa92068c997f1d213b9df4d9756d0fae1a1e7ab66b585ab3498050e236113a1c9e57ee08c21ec6814ca7a7f61378c058d79af50a4b1f5a5e
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>":
-  version: 4.4.3
-  resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=de8f8a"
+"typescript@patch:typescript@4.5.5#~builtin<compat/typescript>":
+  version: 4.5.5
+  resolution: "typescript@patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=de8f8a"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 33a916819907e819430802c50405f18c187448d678696a81545f494a7ec16207f8c15340c945df62109bd1d951091a9f15f3d2eb931a3c889f962c8509017697
+  checksum: 858c61fa63f7274ca4aaaffeced854d550bf416cff6e558c4884041b3311fb662f476f167cf5c9f8680c607239797e26a2ee0bcc6467fbc05bfcb218e1c6c671
   languageName: node
   linkType: hard
 
@@ -5531,13 +5566,6 @@ typescript@4.4.3:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 343617202af32df2a15a3be36a5a8c0c8545208f3d3dfbc6bb7c3e3b7e8c6f8e7485432e4f3b88da3031a6e20afa7c711eded32ddfb122896ac5d914e75848d5
-  languageName: node
-  linkType: hard
-
-"yaml@npm:1.10.2":
-  version: 1.10.2
-  resolution: "yaml@npm:1.10.2"
-  checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
   languageName: node
   linkType: hard
 

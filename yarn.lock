@@ -1038,6 +1038,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/react-app-links@workspace:packages/app-links":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/react-app-links@workspace:packages/app-links"
+  dependencies:
+    "@testing-library/jest-dom": ^5.16.1
+    "@testing-library/react": ^12.1.2
+    "@testing-library/react-hooks": ^7.0.2
+    "@types/react": ^17.0.38
+    "@types/react-dom": ^17.0.11
+    "@types/testing-library__jest-dom": ^5.14.2
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    tldjs: ^2.3.1
+  peerDependencies:
+    react: ^17.0.1
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/react-identity-links@workspace:packages/identity-links":
   version: 0.0.0-use.local
   resolution: "@monstrs/react-identity-links@workspace:packages/identity-links"

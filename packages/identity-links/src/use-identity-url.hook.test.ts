@@ -22,7 +22,7 @@ describe('use-identity-url', () => {
   it('without params', () => {
     mockWindowLocation(new URL('https://identity.monstrs.dev'))
 
-    const { result } = renderHook(() => useIdentityUrl())
+    const { result } = renderHook(() => useIdentityUrl({ returnTo: true }))
 
     expect(result.current).toBe(
       'https://accounts.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
@@ -32,27 +32,27 @@ describe('use-identity-url', () => {
   it('custom type', () => {
     mockWindowLocation(new URL('https://identity.monstrs.dev'))
 
-    const { result } = renderHook(() => useIdentityUrl({ type: 'registration' }))
+    const { result } = renderHook(() => useIdentityUrl({ type: 'registration', returnTo: true }))
 
     expect(result.current).toBe(
       'https://accounts.monstrs.dev/auth/registration?return_to=https://identity.monstrs.dev/'
     )
   })
 
-  it('return to path', () => {
+  it('return to pathname', () => {
     mockWindowLocation(new URL('https://identity.monstrs.dev'))
 
-    const { result } = renderHook(() => useIdentityUrl({ returnTo: '/custom' }))
+    const { result } = renderHook(() => useIdentityUrl({ returnTo: { pathname: '/custom' } }))
 
     expect(result.current).toBe(
       'https://accounts.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/custom'
     )
   })
 
-  it('return to url', () => {
+  it('return to subdomain', () => {
     mockWindowLocation(new URL('https://identity.monstrs.dev'))
 
-    const { result } = renderHook(() => useIdentityUrl({ returnTo: 'https://custom.monstrs.dev/' }))
+    const { result } = renderHook(() => useIdentityUrl({ returnTo: { subdomain: 'custom' } }))
 
     expect(result.current).toBe(
       'https://accounts.monstrs.dev/auth/login?return_to=https://custom.monstrs.dev/'

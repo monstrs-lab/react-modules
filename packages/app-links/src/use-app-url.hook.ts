@@ -8,13 +8,13 @@ export const useAppUrl = ({ subdomain, pathname = '/' }: UseAppUrlProps = {}): s
   const [url, setUrl] = useState<string | null>(null)
 
   useBrowserEffect(() => {
-    const { hostname, origin, protocol } = window.location
+    const { hostname, protocol } = window.location
 
     const domain = getDomain(hostname)
 
-    const urlOrigin = subdomain ? `${protocol}//${subdomain}.${domain}` : origin
+    const origin = subdomain ? `${protocol}//${subdomain}.${domain}` : `${protocol}//${domain}`
 
-    setUrl(`${urlOrigin}${pathname}`)
+    setUrl(`${origin}${pathname}`)
   }, [subdomain, pathname])
 
   return url

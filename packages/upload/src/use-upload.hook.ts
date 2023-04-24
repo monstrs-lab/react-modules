@@ -7,16 +7,20 @@ import { useGatewayUrl } from './use-gateway-url.hook'
 const uploadMutation = gql`
   mutation CreateUpload($input: CreateUploadInput!) {
     createUpload(input: $input) {
-      id
-      url
+      result {
+        id
+        url
+      }
     }
   }
 `
 const confirmMutation = gql`
   mutation ConfirmUpload($input: ConfirmUploadInput!) {
     confirmUpload(input: $input) {
-      id
-      url
+      result {
+        id
+        url
+      }
     }
   }
 `
@@ -24,7 +28,7 @@ const confirmMutation = gql`
 const upload = async (url: string, file: File) => {
   try {
     await fetch(url, {
-      method: 'POST',
+      method: 'PUT',
       body: file,
       headers: {
         'Content-Type': file.type,

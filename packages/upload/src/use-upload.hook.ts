@@ -55,7 +55,9 @@ export const useUpload = ({ bucket, endpoint: defaultEndpoint }: UseUploadProps)
   }, [endpoint]) as GraphQLClient
 
   return async (file: File) => {
-    const data = await client.request(uploadMutation, {
+    const {
+      createUpload: { result },
+    } = await client.request(uploadMutation, {
       input: {
         bucket,
         name: file.name,
@@ -63,14 +65,16 @@ export const useUpload = ({ bucket, endpoint: defaultEndpoint }: UseUploadProps)
       },
     })
 
-    const { id, url } = data.createUpload
+    if (!result) {
+      throw new Error('Upload not created')
+    }
 
-    await upload(url, file)
+    await upload(result.url, file)
 
-    const confirmData = await client.request(confirmMutation, {
-      input: { id },
+    const { confirmUpload } = await client.request(confirmMutation, {
+      input: { id: result.id },
     })
 
-    return confirmData.confirmUpload
+    return confirmUpload.result
   }
 }

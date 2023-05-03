@@ -1,3 +1,5 @@
+import type { Session }      from '@ory/client'
+
 import React                from 'react'
 import { useState }         from 'react'
 import { getDomain }        from 'tldjs'
@@ -50,11 +52,11 @@ export const fetchSession = async (url) => {
 }
 
 export const IdentityBrowserUserProvider = ({ basePath = locationExtractedBasePath, children }) => {
-  const [session, setSession] = useState(undefined)
+  const [session, setSession] = useState<Session | undefined>(undefined)
 
   useBrowserEffect(() => {
     fetchSession(IdentitySessionsWhoamiUrl.fromBasePath(basePath)).then(setSession)
   }, [locationExtractedBasePath])
 
-  return <UserProvider value={session}>{children}</UserProvider>
+  return <UserProvider value={session?.identity}>{children}</UserProvider>
 }

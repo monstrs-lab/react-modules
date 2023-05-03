@@ -1599,6 +1599,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@monstrs/react-identity-user-provider", "workspace:packages/identity-user-provider"],
             ["@monstrs/react-user", "virtual:567686b63483d2e9307859867afce7f50b8a425e97efb9274160c6d9c460c4f856e8eb33dd1d3510a40154567917dcb1a38db6cf26bba3918a28cf97949bab08#workspace:packages/user"],
+            ["@ory/client", "npm:1.1.25"],
             ["@types/react", "npm:17.0.38"],
             ["react", "npm:17.0.2"],
             ["tldjs", "npm:2.3.1"]
@@ -1687,6 +1688,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["js-yaml", "npm:4.1.0"],
             ["semver", "npm:6.3.0"],
             ["strip-json-comments", "npm:3.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@ory/client", [
+        ["npm:1.1.25", {
+          "packageLocation": "./.yarn/cache/@ory-client-npm-1.1.25-2f0a85b0c7-52f4bfae65.zip/node_modules/@ory/client/",
+          "packageDependencies": [
+            ["@ory/client", "npm:1.1.25"],
+            ["axios", "npm:0.21.4"]
           ],
           "linkType": "HARD",
         }]

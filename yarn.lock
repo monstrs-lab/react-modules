@@ -1079,6 +1079,7 @@ __metadata:
   resolution: "@monstrs/react-identity-user-provider@workspace:packages/identity-user-provider"
   dependencies:
     "@monstrs/react-user": "workspace:0.1.2"
+    "@ory/client": "*"
     "@types/react": ^17.0.38
     react: ^17.0.2
     tldjs: ^2.3.1
@@ -1156,6 +1157,15 @@ __metadata:
     "@monstrs/config-typescript": 0.0.10
     "@monstrs/schematics-utils": 0.1.11
   checksum: 3801570a64bd1b0e71fcedf5e6b045e3c7cae2f14ab83052f1af6a5fe4a33bb26b84e87732647cc25d19de6b6424e07d791bf305c299aadc019f47984e96682f
+  languageName: node
+  linkType: hard
+
+"@ory/client@npm:*":
+  version: 1.1.25
+  resolution: "@ory/client@npm:1.1.25"
+  dependencies:
+    axios: ^0.21.4
+  checksum: 52f4bfae656ca594dfd3fd42ac3cd2b68e7e664a3826094d7a407825313200a9b3a33d1fc98fb6f2890ba02866b3511052f6b0af6a8e170a35c1c860cf361b05
   languageName: node
   linkType: hard
 

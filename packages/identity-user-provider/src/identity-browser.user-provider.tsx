@@ -1,16 +1,17 @@
-import type { Session }      from '@ory/client'
+import type { ReactNode }   from 'react'
+import type { Session }     from '@ory/client'
 
-import React                from 'react'
 import { useState }         from 'react'
 import { getDomain }        from 'tldjs'
+import React                from 'react'
 
 import { UserProvider }     from '@monstrs/react-user'
 
-import { useBrowserEffect } from './use-browser-effect.hook'
+import { useBrowserEffect } from './use-browser-effect.hook.js'
 
 export type BasePathFn = () => string
 
-export type BasePath = string | BasePathFn
+export type BasePath = BasePathFn | string
 
 const locationExtractedBasePath: BasePathFn = () => {
   const { hostname, protocol } = window.location
@@ -20,6 +21,10 @@ const locationExtractedBasePath: BasePathFn = () => {
   }
 
   const domain = getDomain(hostname)
+
+  if (!domain) {
+    throw new Error('Domain not found')
+  }
 
   return `${protocol}//identity.${domain}`
 }
@@ -51,7 +56,15 @@ export const fetchSession = async (url) => {
   return data
 }
 
-export const IdentityBrowserUserProvider = ({ basePath = locationExtractedBasePath, children }) => {
+export interface IdentityBrowserUserProviderProps {
+  children?: ReactNode
+  basePath: BasePath
+}
+
+export const IdentityBrowserUserProvider = ({
+  basePath = locationExtractedBasePath,
+  children,
+}: IdentityBrowserUserProviderProps) => {
   const [session, setSession] = useState<Session | undefined>(undefined)
 
   useBrowserEffect(() => {

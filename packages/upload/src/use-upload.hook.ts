@@ -2,7 +2,7 @@ import { GraphQLClient } from 'graphql-request'
 import { gql }           from 'graphql-request'
 import { useMemo }       from 'react'
 
-import { useGatewayUrl } from './use-gateway-url.hook'
+import { useGatewayUrl } from './use-gateway-url.hook.js'
 
 const uploadMutation = gql`
   mutation CreateUpload($input: CreateUploadInput!) {
@@ -52,7 +52,7 @@ export const useUpload = ({ bucket, endpoint: defaultEndpoint }: UseUploadProps)
       return new GraphQLClient(endpoint, {
         credentials: 'include',
       })
-  }, [endpoint]) as GraphQLClient
+  }, [endpoint])!
 
   return async (file: File) => {
     const {

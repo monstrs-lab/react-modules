@@ -2,15 +2,19 @@
  * @jest-environment jsdom
  */
 
-import { renderHook }     from '@testing-library/react-hooks'
+import { describe }       from '@jest/globals'
+import { afterEach }      from '@jest/globals'
+import { it }             from '@jest/globals'
+import { expect }         from '@jest/globals'
+import { renderHook }     from '@testing-library/react'
 
-import { useIdentityUrl } from './use-identity-url.hook'
+import { useIdentityUrl } from './use-identity-url.hook.js'
 
 describe('use-identity-url', () => {
   const originalLocation = window.location
 
   const mockWindowLocation = (newLocation) => {
-    // @ts-ignore
+    // @ts-expect-error
     delete window.location
     window.location = newLocation
   }

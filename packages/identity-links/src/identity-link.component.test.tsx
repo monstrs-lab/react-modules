@@ -2,19 +2,21 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom/extend-expect'
-
+import { describe }     from '@jest/globals'
+import { afterEach }    from '@jest/globals'
+import { it }           from '@jest/globals'
+import { expect }       from '@jest/globals'
 import { render }       from '@testing-library/react'
-
+import { screen }       from '@testing-library/react'
 import React            from 'react'
 
-import { IdentityLink } from './identity-link.component'
+import { IdentityLink } from './identity-link.component.jsx'
 
 describe('identity-link.component', () => {
   const originalLocation = window.location
 
   const mockWindowLocation = (newLocation) => {
-    // @ts-ignore
+    // @ts-expect-error
     delete window.location
     window.location = newLocation
   }
@@ -26,13 +28,9 @@ describe('identity-link.component', () => {
   it('without params', async () => {
     mockWindowLocation(new URL('https://identity.monstrs.dev'))
 
-    const { getByText } = render(
-      <IdentityLink returnTo>{(url) => <a href={url}>Login</a>}</IdentityLink>
-    )
+    render(<IdentityLink returnTo>{(url) => <a href={url}>Login</a>}</IdentityLink>)
 
-    // @ts-ignore
-    expect(getByText('Login')).toHaveAttribute(
-      'href',
+    expect(screen.getByText('Login').getAttribute('href')).toBe(
       'https://accounts.monstrs.dev/auth/login?return_to=https://identity.monstrs.dev/'
     )
   })

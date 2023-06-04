@@ -1,3 +1,3 @@
-export * from './identity-link.component'
-export * from './identity-url.interfaces'
-export * from './use-identity-url.hook'
+export * from './identity-link.component.jsx'
+export * from './identity-url.interfaces.js'
+export * from './use-identity-url.hook.js'

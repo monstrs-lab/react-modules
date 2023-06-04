@@ -1,10 +1,12 @@
+import type { ReactNode }    from 'react'
+import type { ReactElement } from 'react'
 export type IdentityUrlType =
   | 'login'
+  | 'logout'
+  | 'recovery'
   | 'registration'
   | 'settings'
   | 'verification'
-  | 'recovery'
-  | 'logout'
 
 export interface UseIdentityUrlReturnToProps {
   subdomain?: string
@@ -13,5 +15,6 @@ export interface UseIdentityUrlReturnToProps {
 
 export interface UseIdentityUrlProps {
   type?: IdentityUrlType
-  returnTo?: true | false | UseIdentityUrlReturnToProps
+  returnTo?: UseIdentityUrlReturnToProps | false | true
+  children?: ReactNode | ((url: string) => ReactElement<any, any>)
 }

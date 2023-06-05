@@ -429,7 +429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/jest@npm:^11.10.8":
+"@emotion/jest@npm:^11.11.0":
   version: 11.11.0
   resolution: "@emotion/jest@npm:11.11.0"
   dependencies:
@@ -840,15 +840,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monstrs/config-eslint@npm:0.1.12":
-  version: 0.1.12
-  resolution: "@monstrs/config-eslint@npm:0.1.12"
+"@monstrs/config-eslint@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@monstrs/config-eslint@npm:0.3.1"
   dependencies:
-    "@monstrs/config-prettier": "npm:0.2.7"
-    "@next/eslint-plugin-next": "npm:^13.4.2"
-    "@typescript-eslint/eslint-plugin": "npm:^5.59.2"
-    "@typescript-eslint/parser": "npm:^5.59.2"
-    eslint: "npm:^8.39.0"
+    "@monstrs/config-prettier": "npm:0.4.1"
+    "@next/eslint-plugin-next": "npm:^13.4.4"
+    "@typescript-eslint/eslint-plugin": "npm:^5.59.8"
+    "@typescript-eslint/parser": "npm:^5.59.8"
+    eslint: "npm:^8.42.0"
     eslint-import-resolver-node: "npm:^0.3.7"
     eslint-plugin-import: "npm:^2.27.5"
     eslint-plugin-jsx-a11y: "npm:^6.7.1"
@@ -862,17 +862,17 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: c25c6910d31dfe58d3e76981ee0dd7096ded327f1d27e69febbcafe18dd6b07b116626ac2bae3947ae7dc7dfc077d1ce2c6ea7d6568ffe2532a4d66ad4780e84
+  checksum: e184e743c6ad5220955826c562ed0b0c2ff8af7fddb11a73b349801758e39df93c712de4f336789dd31aa3b8221cc491ba10587fdd720199af744225ec0d87e4
   languageName: node
   linkType: hard
 
-"@monstrs/config-jest@npm:0.1.11":
-  version: 0.1.11
-  resolution: "@monstrs/config-jest@npm:0.1.11"
+"@monstrs/config-jest@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@monstrs/config-jest@npm:0.3.1"
   dependencies:
-    "@emotion/jest": "npm:^11.10.8"
-    "@monstrs/config-typescript": "npm:0.1.7"
-    "@monstrs/jest-resolver": "npm:0.1.2"
+    "@emotion/jest": "npm:^11.11.0"
+    "@monstrs/config-typescript": "npm:0.3.1"
+    "@monstrs/jest-resolver": "npm:0.3.1"
     jest-static-stubs: "npm:^0.0.1"
     ts-jest: "npm:^29.1.0"
   peerDependenciesMeta:
@@ -880,32 +880,32 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 0c9692cda545c4529b336a6c07e2062a74063ac79ae1e108e9b593b7c1a3e48c1c006aca2fb80bb45e953dc9b0f20d9005482024aeae909382ef0baf172ad1cc
+  checksum: 6b06584e8a88da032c3fde8180fe97bd9711443296aa9c8df5c0b8459e0610101f23d3e9572049895370b503b0da31a65a071ce5ffb343b3b58fec5a4967b67c
   languageName: node
   linkType: hard
 
-"@monstrs/config-prettier@npm:0.2.7":
-  version: 0.2.7
-  resolution: "@monstrs/config-prettier@npm:0.2.7"
+"@monstrs/config-prettier@npm:0.4.1":
+  version: 0.4.1
+  resolution: "@monstrs/config-prettier@npm:0.4.1"
   dependencies:
     prettier: "npm:^3.0.0-alpha.6"
-  checksum: 72a1529f5fd1cc8ca6e3f17308ecbb3c62bcefa79268f360146a69530a398570b4a3866f1c4c68985adf081e38a362912bb615f36d4091bd4fcce9d1d0d2672b
+  checksum: c9398160cd614cc66b7220a658515d44b77cda5cdb12cb2c9f8f8f947895de9f541a224613f6c1f58b3cc28829bc174be8376878d5ee2f575cd59420f65d0a00
   languageName: node
   linkType: hard
 
-"@monstrs/config-typescript@npm:0.1.7":
-  version: 0.1.7
-  resolution: "@monstrs/config-typescript@npm:0.1.7"
-  checksum: d13ba2ab28f90b8a542bbdcce39e10fb308ea7db6da6413665e3af4763989b08632c6e7e2773c957d53afc764c28d71fb3ce719b293d43be0d6856bdc264c174
+"@monstrs/config-typescript@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@monstrs/config-typescript@npm:0.3.1"
+  checksum: a3cdeee6881f5808504aa05877f16b9a5dc395b8846821af1152bbe01260128867e0870ec8bbc489be33153693288f7b89d250d3eb8c15fc884e8769f24fd186
   languageName: node
   linkType: hard
 
-"@monstrs/jest-resolver@npm:0.1.2":
-  version: 0.1.2
-  resolution: "@monstrs/jest-resolver@npm:0.1.2"
+"@monstrs/jest-resolver@npm:0.3.1":
+  version: 0.3.1
+  resolution: "@monstrs/jest-resolver@npm:0.3.1"
   dependencies:
     ts-jest-resolver: "npm:^2.0.1"
-  checksum: 0aee93da292971b6f84a10e9aa8f98a77fd7728924b1e9f5b25be7fc9ecbeb5b8ed909e1c2e9ea217b2b8ae94f45eb97882329a15f3e199064627a30284a23de
+  checksum: 7b08d6142302aed965bde85f091934c2808515f11a423231f1c88c28ad4408e51fcceb9967497948149ffda602007d48c133b2f923d864478dd5c945c983d936
   languageName: node
   linkType: hard
 
@@ -981,25 +981,25 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monstrs/tools-runtime@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "@monstrs/tools-runtime@npm:0.0.6"
+"@monstrs/tools-runtime@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@monstrs/tools-runtime@npm:0.2.1"
   dependencies:
     "@jest/core": "npm:^29.5.0"
-    "@monstrs/config-eslint": "npm:0.1.12"
-    "@monstrs/config-jest": "npm:0.1.11"
+    "@monstrs/config-eslint": "npm:0.3.1"
+    "@monstrs/config-jest": "npm:0.3.1"
     "@svgr/core": "npm:^8.0.0"
     "@svgr/plugin-jsx": "npm:^8.0.1"
-    eslint: "npm:^8.39.0"
+    eslint: "npm:^8.42.0"
     node-loader: "npm:^2.0.0"
-    ts-loader: "npm:^9.4.2"
-    typescript: "npm:^5.0.4"
-    webpack: "npm:^5.82.0"
-  checksum: 34f1b24a5f559eed7b5b23dc6058df68a2cb5c7de87b919bac437ae069884feeff6f18df6f6bc8f21195b1437bfb0359355a24663a7030d75c8736ba1d09ff10
+    ts-loader: "npm:^9.4.3"
+    typescript: "npm:^5.1.3"
+    webpack: "npm:^5.85.0"
+  checksum: 03db19b075d044314014151593eb5f67b8f9faf0b009fba8e459668eb80614eac0791332906e06e1c6a87d9df7688ce182e727067a89ce6127e387f9cb46ba69
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^13.4.2":
+"@next/eslint-plugin-next@npm:^13.4.4":
   version: 13.4.4
   resolution: "@next/eslint-plugin-next@npm:13.4.4"
   dependencies:
@@ -1479,7 +1479,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.59.2":
+"@typescript-eslint/eslint-plugin@npm:^5.59.8":
   version: 5.59.8
   resolution: "@typescript-eslint/eslint-plugin@npm:5.59.8"
   dependencies:
@@ -1503,7 +1503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.59.2":
+"@typescript-eslint/parser@npm:^5.59.8":
   version: 5.59.8
   resolution: "@typescript-eslint/parser@npm:5.59.8"
   dependencies:
@@ -3176,7 +3176,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.39.0":
+"eslint@npm:^8.42.0":
   version: 8.42.0
   resolution: "eslint@npm:8.42.0"
   dependencies:
@@ -5808,10 +5808,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-modules@workspace:."
   dependencies:
-    "@monstrs/tools-runtime": "npm:^0.0.6"
+    "@monstrs/tools-runtime": "npm:^0.2.1"
     "@types/node": "npm:^20.2.5"
     jest-environment-jsdom: "npm:^29.5.0"
-    typescript: "npm:^5.0.4"
+    typescript: "npm:^5.1.3"
   languageName: unknown
   linkType: soft
 
@@ -6579,7 +6579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:^9.4.2":
+"ts-loader@npm:^9.4.3":
   version: 9.4.3
   resolution: "ts-loader@npm:9.4.3"
   dependencies:
@@ -6681,23 +6681,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.0.4":
-  version: 5.0.4
-  resolution: "typescript@npm:5.0.4"
+"typescript@npm:^5.1.3":
+  version: 5.1.3
+  resolution: "typescript@npm:5.1.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 56649de784c427e8f3f63d4ebfcada4fcf03bb2a301f3327342111798db7f26f8a86285f979f376cf6cec4774bd96b4650f2693a07fc409f4544ad4c4d9fe4c9
+  checksum: 34f5c10a175ad596eb9ef7b12a0417d830317859754bddde67d6681c8bd7e67a24c88dfab600bf0deeb7355cb0f58faf7ab2a2c34a5d3c96f8420928f0f69b58
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>":
-  version: 5.0.4
-  resolution: "typescript@patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=b5f058"
+"typescript@patch:typescript@npm%3A^5.1.3#optional!builtin<compat/typescript>":
+  version: 5.1.3
+  resolution: "typescript@patch:typescript@npm%3A5.1.3#optional!builtin<compat/typescript>::version=5.1.3&hash=5da071"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: e4296a207d18264eb9b17a912b0929c4e8be5a4e48aefa016e952eaa445e5a4ed363a72d9023f151dc7f100d48d4bfa35480aec199f123a664ef8a622355ae4f
+  checksum: ef6d5eaa31049b41bf1ddf091806aed923e65ea3de951bb27e05bc65911c3bf373b3c2bcc9204d2d2dbdca7d2e06c6a645824580638a8c2c18e2e5155cfc33b7
   languageName: node
   linkType: hard
 
@@ -6838,7 +6838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.82.0":
+"webpack@npm:^5.85.0":
   version: 5.85.0
   resolution: "webpack@npm:5.85.0"
   dependencies:

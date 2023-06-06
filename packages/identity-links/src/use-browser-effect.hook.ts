@@ -5,7 +5,7 @@ import type { DependencyList } from 'react'
 
 import { useEffect }           from 'react'
 
-export const useBrowserEffect = (effect: EffectCallback, deps?: DependencyList) => {
+export const useBrowserEffect = (effect: EffectCallback, deps?: DependencyList): void => {
   if (typeof window !== 'undefined') {
     useEffect(effect, deps)
   }

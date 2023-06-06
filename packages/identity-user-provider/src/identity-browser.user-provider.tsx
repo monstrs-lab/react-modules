@@ -1,5 +1,6 @@
 import type { ReactNode }   from 'react'
 import type { Session }     from '@ory/client'
+import type { JSX }         from 'react'
 
 import { useState }         from 'react'
 import { getDomain }        from 'tldjs'
@@ -30,7 +31,7 @@ const locationExtractedBasePath: BasePathFn = () => {
 }
 
 export class IdentitySessionsWhoamiUrl {
-  static fromBasePath(basePath: BasePath) {
+  static fromBasePath(basePath: BasePath): string {
     return new URL(
       '/sessions/whoami',
       typeof basePath === 'function' ? basePath() : basePath
@@ -38,7 +39,7 @@ export class IdentitySessionsWhoamiUrl {
   }
 }
 
-export const fetchSession = async (url) => {
+export const fetchSession = async (url): Promise<Session | undefined> => {
   const response = await fetch(url, {
     credentials: 'include',
   })
@@ -47,7 +48,7 @@ export const fetchSession = async (url) => {
 
   if (data?.error) {
     if (data.error.code === 401) {
-      return null
+      return undefined
     }
 
     throw new Error(data.error.message)
@@ -64,7 +65,7 @@ export interface IdentityBrowserUserProviderProps {
 export const IdentityBrowserUserProvider = ({
   basePath = locationExtractedBasePath,
   children,
-}: IdentityBrowserUserProviderProps) => {
+}: IdentityBrowserUserProviderProps): JSX.Element => {
   const [session, setSession] = useState<Session | undefined>(undefined)
 
   useBrowserEffect(() => {

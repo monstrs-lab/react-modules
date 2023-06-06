@@ -13,7 +13,7 @@ import { useIdentityUrl } from './use-identity-url.hook.js'
 describe('use-identity-url', () => {
   const originalLocation = window.location
 
-  const mockWindowLocation = (newLocation) => {
+  const mockWindowLocation = (newLocation): void => {
     // @ts-expect-error
     delete window.location
     window.location = newLocation

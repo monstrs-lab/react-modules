@@ -25,7 +25,7 @@ const confirmMutation = gql`
   }
 `
 
-const upload = async (url: string, file: File) => {
+const upload = async (url: string, file: File): Promise<void> => {
   try {
     await fetch(url, {
       method: 'PUT',
@@ -43,7 +43,10 @@ export interface UseUploadProps {
   endpoint?: string
 }
 
-export const useUpload = ({ bucket, endpoint: defaultEndpoint }: UseUploadProps) => {
+export const useUpload = ({
+  bucket,
+  endpoint: defaultEndpoint,
+}: UseUploadProps): ((file: File) => Promise<{ id: string; url: string }>) => {
   const endpoint = useGatewayUrl(defaultEndpoint)
 
   // eslint-disable-next-line consistent-return
@@ -54,7 +57,7 @@ export const useUpload = ({ bucket, endpoint: defaultEndpoint }: UseUploadProps)
       })
   }, [endpoint])!
 
-  return async (file: File) => {
+  return async (file: File): Promise<{ id: string; url: string }> => {
     const {
       createUpload: { result },
     } = await client.request(uploadMutation, {

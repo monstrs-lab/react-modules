@@ -39,7 +39,7 @@ export class IdentitySessionsWhoamiUrl {
   }
 }
 
-export const fetchSession = async (url): Promise<Session | undefined> => {
+export const fetchSession = async (url: string): Promise<Session | undefined> => {
   const response = await fetch(url, {
     credentials: 'include',
   })

@@ -1,6 +1,0 @@
-releases:
-  "@monstrs/react-app-links": patch
-  "@monstrs/react-identity-links": patch
-  "@monstrs/react-identity-user-provider": patch
-  "@monstrs/react-upload": patch
-  "@monstrs/react-user": patch

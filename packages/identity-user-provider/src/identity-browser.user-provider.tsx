@@ -51,6 +51,7 @@ export const fetchSession = async (url: string): Promise<Session | undefined> =>
       return undefined
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     throw new Error(data.error.message)
   }
 

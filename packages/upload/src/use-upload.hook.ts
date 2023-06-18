@@ -60,13 +60,16 @@ export const useUpload = ({
   return async (file: File): Promise<{ id: string; url: string }> => {
     const {
       createUpload: { result },
-    } = await client.request(uploadMutation, {
-      input: {
-        bucket,
-        name: file.name,
-        size: file.size,
-      },
-    })
+    }: { createUpload: { result: { id: string; url: string } } } = await client.request(
+      uploadMutation,
+      {
+        input: {
+          bucket,
+          name: file.name,
+          size: file.size,
+        },
+      }
+    )
 
     if (!result) {
       throw new Error('Upload not created')

@@ -77,9 +77,10 @@ export const useUpload = ({
 
     await upload(result.url, file)
 
-    const { confirmUpload } = await client.request(confirmMutation, {
-      input: { id: result.id },
-    })
+    const { confirmUpload }: { confirmUpload: { result: { id: string; url: string } } } =
+      await client.request(confirmMutation, {
+        input: { id: result.id },
+      })
 
     return confirmUpload.result
   }

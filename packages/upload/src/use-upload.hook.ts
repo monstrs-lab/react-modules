@@ -49,13 +49,21 @@ export const useUpload = ({
 }: UseUploadProps): ((file: File) => Promise<{ id: string; url: string }>) => {
   const endpoint = useGatewayUrl(defaultEndpoint)
 
-  // eslint-disable-next-line consistent-return
-  const client = useMemo(() => {
-    if (endpoint)
-      return new GraphQLClient(endpoint, {
+  if (!endpoint) {
+    return async (): Promise<{ id: string; url: string }> => ({
+      id: '',
+      url: '',
+    })
+  }
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const client: GraphQLClient = useMemo(
+    () =>
+      new GraphQLClient(endpoint, {
         credentials: 'include',
-      })
-  }, [endpoint])!
+      }),
+    [endpoint]
+  )!
 
   return async (file: File): Promise<{ id: string; url: string }> => {
     const {

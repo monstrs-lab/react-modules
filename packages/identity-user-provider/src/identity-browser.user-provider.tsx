@@ -55,7 +55,7 @@ export const fetchSession = async (url: string): Promise<Session | undefined> =>
     throw new Error(data.error.message)
   }
 
-  return data
+  return data as Session
 }
 
 export interface IdentityBrowserUserProviderProps {

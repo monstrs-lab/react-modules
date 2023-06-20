@@ -17,9 +17,10 @@ import { IdentityLink } from './identity-link.component.jsx'
 describe('identity-link.component', () => {
   const originalLocation = window.location
 
-  const mockWindowLocation = (newLocation): void => {
+  const mockWindowLocation = (newLocation: Location | URL): void => {
     // @ts-expect-error
     delete window.location
+    // @ts-expect-error
     window.location = newLocation
   }
 

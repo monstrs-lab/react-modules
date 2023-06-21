@@ -60,7 +60,7 @@ export const fetchSession = async (url: string): Promise<Session | undefined> =>
 
 export interface IdentityBrowserUserProviderProps {
   children?: ReactNode
-  basePath: BasePath
+  basePath?: BasePath
 }
 
 export const IdentityBrowserUserProvider = ({

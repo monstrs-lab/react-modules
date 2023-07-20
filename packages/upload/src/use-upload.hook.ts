@@ -1,6 +1,5 @@
 import { GraphQLClient } from 'graphql-request'
 import { gql }           from 'graphql-request'
-import { useMemo }       from 'react'
 
 import { useGatewayUrl } from './use-gateway-url.hook.js'
 
@@ -49,23 +48,15 @@ export const useUpload = ({
 }: UseUploadProps): ((file: File) => Promise<{ id: string; url: string }>) => {
   const endpoint = useGatewayUrl(defaultEndpoint)
 
-  if (!endpoint) {
-    return async (): Promise<{ id: string; url: string }> => ({
-      id: '',
-      url: '',
-    })
-  }
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const client: GraphQLClient = useMemo(
-    () =>
-      new GraphQLClient(endpoint, {
-        credentials: 'include',
-      }),
-    [endpoint]
-  )!
-
   return async (file: File): Promise<{ id: string; url: string }> => {
+    if (!endpoint) {
+      throw new Error('Endpoint not found')
+    }
+
+    const client = new GraphQLClient(endpoint, {
+      credentials: 'include',
+    })
+
     const {
       createUpload: { result },
     }: { createUpload: { result: { id: string; url: string } } } = await client.request(

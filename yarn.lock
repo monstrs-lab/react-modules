@@ -1032,6 +1032,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monstrs/react-cookie@workspace:packages/cookie":
+  version: 0.0.0-use.local
+  resolution: "@monstrs/react-cookie@workspace:packages/cookie"
+  dependencies:
+    "@types/react": "npm:^18.2.8"
+    react: "npm:^18.2.0"
+    universal-cookie: "npm:^4.0.4"
+  peerDependencies:
+    react: ^18
+  languageName: unknown
+  linkType: soft
+
 "@monstrs/react-identity-links@workspace:packages/identity-links":
   version: 0.0.0-use.local
   resolution: "@monstrs/react-identity-links@workspace:packages/identity-links"
@@ -1415,6 +1427,13 @@ __metadata:
   dependencies:
     "@babel/types": "npm:^7.20.7"
   checksum: 5a6a3a26be090573309527184a31f1b82ef55f3d73d811c15f181d323e471305f2390651a04d49d4cd4ca41bbeabb53c9f7862a8e09eab5a0f8910a6aec6e867
+  languageName: node
+  linkType: hard
+
+"@types/cookie@npm:^0.3.3":
+  version: 0.3.3
+  resolution: "@types/cookie@npm:0.3.3"
+  checksum: 96521593ca46d865d03b04b4af0324a45a1da8312b13aa2026d97a284cd6f559cc0d695a4f3255405cd301a8c93c13b22e77400ad42a0b903e06056202d49fed
   languageName: node
   linkType: hard
 
@@ -2595,6 +2614,13 @@ __metadata:
   version: 2.0.0
   resolution: "convert-source-map@npm:2.0.0"
   checksum: 8f2f7a27a1a011cc6cc88cc4da2d7d0cfa5ee0369508baae3d98c260bb3ac520691464e5bbe4ae7cdf09860c1d69ecc6f70c63c6e7c7f7e3f18ec08484dc7d9b
+  languageName: node
+  linkType: hard
+
+"cookie@npm:^0.4.0":
+  version: 0.4.2
+  resolution: "cookie@npm:0.4.2"
+  checksum: beab41fbd7c20175e3a2799ba948c1dcc71ef69f23fe14eeeff59fc09f50c517b0f77098db87dbb4c55da802f9d86ee86cdc1cd3efd87760341551838d53fca2
   languageName: node
   linkType: hard
 
@@ -7065,6 +7091,16 @@ __metadata:
   dependencies:
     imurmurhash: "npm:^0.1.4"
   checksum: 617240eb921af803b47d322d75a71a363dacf2e56c29ae5d1404fad85f64f4ec81ef10ee4fd79215d0202cbe1e5a653edb0558d59c9c81d3bd538c2d58e4c026
+  languageName: node
+  linkType: hard
+
+"universal-cookie@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "universal-cookie@npm:4.0.4"
+  dependencies:
+    "@types/cookie": "npm:^0.3.3"
+    cookie: "npm:^0.4.0"
+  checksum: db5950601c2f0dbb22af930656bd6abe1f3a9eee4c488703fa806c38b27b98e2ad212445c152a4721c84ee05d1a8dd26decd13690f1c9870fac355682e17998a
   languageName: node
   linkType: hard
 

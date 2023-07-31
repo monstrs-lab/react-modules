@@ -18,6 +18,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/app-links"\
     },\
     {\
+      "name": "@monstrs/react-cookie",\
+      "reference": "workspace:packages/cookie"\
+    },\
+    {\
       "name": "@monstrs/react-identity-links",\
       "reference": "workspace:packages/identity-links"\
     },\
@@ -38,6 +42,7 @@ const RAW_RUNTIME_STATE =
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@monstrs/react-app-links", ["virtual:64ec816ccba7ffc8bc5b3e3a85a11ae385710dff89cd087968c6a7ccb44de9803ca57b32fd4bf3a5743273b2799e4b66be5c235b6e3fb57915fd7ff086864685#workspace:packages/app-links", "workspace:packages/app-links"]],\
+    ["@monstrs/react-cookie", ["workspace:packages/cookie"]],\
     ["@monstrs/react-identity-links", ["workspace:packages/identity-links"]],\
     ["@monstrs/react-identity-user-provider", ["workspace:packages/identity-user-provider"]],\
     ["@monstrs/react-upload", ["workspace:packages/upload"]],\
@@ -1579,6 +1584,18 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
+    ["@monstrs/react-cookie", [\
+      ["workspace:packages/cookie", {\
+        "packageLocation": "./packages/cookie/",\
+        "packageDependencies": [\
+          ["@monstrs/react-cookie", "workspace:packages/cookie"],\
+          ["@types/react", "npm:18.2.8"],\
+          ["react", "npm:18.2.0"],\
+          ["universal-cookie", "npm:4.0.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@monstrs/react-identity-links", [\
       ["workspace:packages/identity-links", {\
         "packageLocation": "./packages/identity-links/",\
@@ -2138,6 +2155,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/babel__traverse", "npm:7.20.1"],\
           ["@babel/types", "npm:7.22.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/cookie", [\
+      ["npm:0.3.3", {\
+        "packageLocation": "./.yarn/cache/@types-cookie-npm-0.3.3-a5ddc16db3-96521593ca.zip/node_modules/@types/cookie/",\
+        "packageDependencies": [\
+          ["@types/cookie", "npm:0.3.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3645,6 +3671,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/convert-source-map-npm-2.0.0-7ab664dc4e-8f2f7a27a1.zip/node_modules/convert-source-map/",\
         "packageDependencies": [\
           ["convert-source-map", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cookie", [\
+      ["npm:0.4.2", {\
+        "packageLocation": "./.yarn/cache/cookie-npm-0.4.2-7761894d5f-beab41fbd7.zip/node_modules/cookie/",\
+        "packageDependencies": [\
+          ["cookie", "npm:0.4.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8834,6 +8869,17 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["unique-slug", "npm:3.0.0"],\
           ["imurmurhash", "npm:0.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["universal-cookie", [\
+      ["npm:4.0.4", {\
+        "packageLocation": "./.yarn/cache/universal-cookie-npm-4.0.4-aa9b4bcfbf-db5950601c.zip/node_modules/universal-cookie/",\
+        "packageDependencies": [\
+          ["universal-cookie", "npm:4.0.4"],\
+          ["@types/cookie", "npm:0.3.3"],\
+          ["cookie", "npm:0.4.2"]\
         ],\
         "linkType": "HARD"\
       }]\

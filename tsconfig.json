@@ -49,8 +49,5 @@
     "outDir": "./dist",
     "noImplicitOverride": true
   },
-  "include": [
-    "project.types.d.ts",
-    "packages/**/*"
-  ]
+  "include": ["project.types.d.ts", "packages/**/*"]
 }

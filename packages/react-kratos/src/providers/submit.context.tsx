@@ -36,7 +36,8 @@ export const SubmitConsumer = Consumer
 export const SubmitContext = Context
 
 export const SubmitProvider = <T extends Body>({
+  children,
   value,
 }: PropsWithChildren<{ value: ContextSubmit<T> }>): ReactElement => (
-  <Provider value={value as ContextSubmit<Body>} />
+  <Provider value={value as ContextSubmit<Body>}>{children}</Provider>
 )

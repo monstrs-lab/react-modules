@@ -7,8 +7,8 @@
   ],
   "devDependencies": {
     "@monstrs/tools-runtime": "^0.2.19",
-    "@types/node": "^20.2.5",
-    "jest-environment-jsdom": "^29.5.0",
+    "@types/node": "^20.10.5",
+    "jest-environment-jsdom": "^29.7.0",
     "typescript": "^5.3.3"
   },
   "packageManager": "yarn@4.0.2",

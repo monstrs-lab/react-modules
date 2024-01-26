@@ -21,7 +21,7 @@ import { useSdk }                          from '../hooks'
 export interface RegistrationNativeFlowProps {
   children: ReactNode
   returnTo?: string
-  onSession?: (session: { session: Session; sessionToken?: string }) => void
+  onSession?: (session: { session: Session; sessionToken?: string }) => Promise<void>
   onError?: (error: unknown) => void
   onGenericError?: (error: GenericError) => void
 }
@@ -82,7 +82,7 @@ export const RegistrationNativeFlow = ({
         }
 
         if (data.session && onSession) {
-          onSession({
+          await onSession({
             session: data.session,
             sessionToken: data.session_token,
           })

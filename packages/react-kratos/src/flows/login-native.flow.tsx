@@ -25,7 +25,7 @@ export interface LoginNativeFlowProps {
   sessionToken?: string
   returnTo?: string
   onError?: (error: unknown) => void
-  onSession?: (session: { session: Session; sessionToken?: string }) => void
+  onSession?: (session: { session: Session; sessionToken?: string }) => Promise<void>
   onGenericError?: (error: GenericError) => void
 }
 
@@ -92,7 +92,7 @@ export const LoginNativeFlow = ({
         }
 
         if (data.session && onSession) {
-          onSession({
+          await onSession({
             session: data.session,
             sessionToken: data.session_token,
           })
